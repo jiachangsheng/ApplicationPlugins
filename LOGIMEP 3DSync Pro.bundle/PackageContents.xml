@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="3DSync Pro" Description="An Autodesk® Revit® add-on that allows the user to synchronize manually / automatically between ..." AppVersion="1.7.0" FriendlyVersion="1.7.0" ProductType="Application" HelpFile="./Contents/help.html" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" OnlineDocumentation="https://logimep.fr" Author="José Dos Santos" ProductCode="{576998ED-1350-4510-8BD1-B4B987CC0DE3}" UpgradeCode="{471CAE4D-55BA-4D36-AFA3-D299E6BBD624}" Icon="./Contents/Resources/favicon.ico">
+  <CompanyDetails Name="LOGIMEP" Url="https://logimep.fr" Email="contact@logimep.fr" />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2023" />
+  <Components Description="R2018 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="3DSync Pro" Version="1.7.0" ModuleName="./Contents/3DSync.addin" AppDescription="An Autodesk® Revit® add-on that allows the user to synchronize manually / automatically between ..." />
+  </Components>
+  <Components Description="R2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />
+    <ComponentEntry AppName="3DSync Pro" Version="1.7.0" ModuleName="./Contents/3DSync.addin" AppDescription="An Autodesk® Revit® add-on that allows the user to synchronize manually / automatically between ..." />
+  </Components>
+  <Components Description="R2020 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+    <ComponentEntry AppName="3DSync Pro" Version="1.7.0" ModuleName="./Contents/3DSync.addin" AppDescription="An Autodesk® Revit® add-on that allows the user to synchronize manually / automatically between ..." />
+  </Components>
+  <Components Description="R2021 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
+    <ComponentEntry AppName="3DSync Pro" Version="1.7.0" ModuleName="./Contents/3DSync.addin" AppDescription="An Autodesk® Revit® add-on that allows the user to synchronize manually / automatically between ..." />
+  </Components>
+  <Components Description="R2022 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
+    <ComponentEntry AppName="3DSync Pro" Version="1.7.0" ModuleName="./Contents/3DSync.addin" AppDescription="3DSync Pro" />
+  </Components>
+  <Components Description="R2023 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="3DSync Pro" Version="1.7.0" ModuleName="./Contents/3DSync.addin" AppDescription="3DSync Pro" />
+  </Components>
+</ApplicationPackage>

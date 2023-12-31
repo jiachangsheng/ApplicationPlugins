@@ -1,0 +1,72 @@
+#bar {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #ffffff,
+    stop: 1 #e0e0e0);
+  padding: 0;
+}
+#panel {
+  margin: 0;
+  border: 1px solid #ddd;
+}
+
+QWidget[sof_ribbon_control_type="panel_label_box"] {
+  border: none;
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #ddd,
+    stop: 1 #ccc);
+}
+QWidget[sof_ribbon_control_type="panel_grid"] {
+	margin: 0;
+	padding: 0;
+}
+QWidget[sof_ribbon_control_type="panel_label"] {
+  color: #505050;
+  margin: 1px;
+}
+QWidget[sof_is_contextual="true"] {
+  background-color: #fefefe;
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #fefefe,
+    stop: 1 #f2fad4);
+}
+QWidget[sof_is_contextual="true"] QWidget[sof_ribbon_control_type="panel_label_box"] {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0 #f2fad4,
+    stop: 1 #cdd4af);
+  margin: 1px;
+}
+
+
+#bar QPushButton {
+  border: none;
+  border-radius: 2px;
+  background-color: none;
+  padding: 2px;
+}
+
+#bar QPushButton:checked[sof_button_type="mode"] {
+  border: 1px solid #c0d0d0;
+  background-color: #ffdb6d;
+}
+#bar QPushButton:checked[sof_button_type="command"] {
+  border: 1px solid #c0d0d0;
+  background-color: #bfdaf3;
+}
+
+#bar QPushButton:hover[sof_button_type="mode"] {
+  border: 1px solid #708090;
+  background-color: #ffeb8d;
+}
+#bar QPushButton:hover[sof_button_type="command"] {
+  border: 1px solid #708090;
+  background-color: #cfeaf9;
+}
+
+#bar QPushButton:pressed[sof_button_type="mode"] {
+  border: 1px solid #808070;
+  background-color: #fcdc69;
+}
+#bar QPushButton:pressed[sof_button_type="command"] {
+  border: 1px solid #808070;
+  background-color: #b3d4f2;
+}

@@ -1,0 +1,21 @@
+1. Select an item from the Selection Type dropdown:
+	- Active View
+	- By Level 
+	- Current Selection
+	- Entire Project
+   if selection was "By Level", another dropdown will display below to select a level.
+
+2. Select a category from the category dropdown which display all the related categories from Selection Type value.
+3. Select a parameter from the parameter name dropdown which display all the related parameters from Category value.
+4. Select a parameter filter rule.
+5. Select a parameter value from the parameter value dropdown which display all the related parameter value from the elements.
+
+
+ElementSelector Pro is a free Autodesk® Revit® Application to Filter, Preview, and Select elements from an active view, a level, 
+current selection or entire project by its category and a parameter value. And included these additional useful features:
+
+Interaction with Element(s) while using the app (not necessary to close the app).
+Category and Parameter are optional filters to make a selection.
+Parameter Rule Filter support all parameter types.
+Click to a preview item(ElementId) to zoom-in the associated element.
+ 

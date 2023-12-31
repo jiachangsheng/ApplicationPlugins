@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Backup File Organizer</Name>
+    <Assembly>.\BackupFileOrganizer.dll</Assembly>
+    <AddInId>df64af42-1df7-49c1-ab7e-ecf3e924debb</AddInId>
+    <FullClassName>Sferrazza.Revit.BackupOrganizerApplication</FullClassName>
+    <SuppressedWarning>WrongAssemblyPath</SuppressedWarning>
+    <VendorId>JS</VendorId>
+    <VendorDescription>Apps By JS</VendorDescription>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,52 @@
+/** This was a verbatim copy of sidebar.group.style.
+    We've updated it to match the style of the AutoCAD 2014 properties palette.
+*/
+
+QTreeView {
+	background-color: #efefef;
+   border: none;
+   outline: none; /* remove focus rect */
+   selection-background-color: transparent; /* Otherwise, Fusion style paints over the whole item width... */
+}
+
+QTreeView::item {
+   border-bottom: 1px solid #bbb;
+	background-color: #efefef;
+}
+QTreeView::item:first { /* column 0 */
+   border-left: 1px solid #bbb;
+   border-right: 1px solid #bbb;
+}
+QTreeView::item:last { /* column 1 */
+   border-right: 1px solid #bbb;
+	background-color: #fff;
+}
+QTreeView::item:last:disabled {
+   border-right: 1px solid #bbb;
+	background-color: #efefef;
+}
+QTreeView::item:has-children:has-siblings {
+   border-top: 1px solid #bbb;
+}
+
+QTreeView::item:focus {
+   background-color: #79e;
+}
+QTreeView::item:selected {
+   background-color: #79e;
+}
+
+/* 25.05.2014,sk: Disabled, we now style the root-level properties (aka 'section') via delegate's paint(). See code for details.
+QLabel {
+	color: black;
+	font-weight: bold;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2: 1, stop: 0 #aaa, stop: 1 #999);
+	border: 1px solid #888;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+
+   margin-top: 6px;
+}
+*/

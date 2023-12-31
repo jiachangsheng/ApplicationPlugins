@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name> 3DSync Pro</Name>
+    <Assembly>3DSync.dll</Assembly>
+    <FullClassName>_3DSync.App</FullClassName>
+    <ClientId>BFCD0D8F-8E46-4BDC-87F1-E0F265B277C1</ClientId>
+    <VendorId>logimep</VendorId>
+    <VendorDescription>contact@logimep.fr</VendorDescription>
+  </AddIn>
+</RevitAddIns>

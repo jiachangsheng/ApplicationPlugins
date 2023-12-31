@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="Get Linked Project Base Point and Survey Point" Description="Shows the location and coordinates of the Project Base Point or Survey Point in a linked model." AppVersion="1.1" FriendlyVersion="1.1" ProductType="Application" HelpFile="./Contents/Resources/Help.htm" Author="Corentin Gartner" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" OnlineDocumentation="https://pangolin.tools" ProductCode="{3EC66F24-9147-4652-9646-DA881E64A66A}" UpgradeCode="{A8614DBB-6A0A-4A17-B43A-F2B2156B2194}" Icon="./Contents/Resources/Resources/Icon.ico">
+  <CompanyDetails Name="Pangolin tools" Url="https://pangolin.tools" Email="contact@pangolin.tools" Phone=" " />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2017" SeriesMax="R2019" />
+  <Components Description="2017 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2017" SeriesMax="R2017" />
+    <ComponentEntry AppName="Get Linked Project Base Point and Survey Point" Version="1.1" ModuleName="./Contents/2017/BasePointTool.addin" AppDescription="Shows the location and coordinates of the Project Base Point or Survey Point in a linked model." />
+  </Components>
+  <Components Description="2018 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="Get Linked Project Base Point and Survey Point" Version="1.1" ModuleName="./Contents/2018/BasePointTool.addin" AppDescription="Shows the location and coordinates of the Project Base Point or Survey Point in a linked model." />
+  </Components>
+  <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />
+    <ComponentEntry AppName="Get Linked Project Base Point and Survey Point" Version="1.1" ModuleName="./Contents/2019/BasePointTool.addin" AppDescription="Shows the location and coordinates of the Project Base Point or Survey Point in a linked model." />
+  </Components>
+</ApplicationPackage>

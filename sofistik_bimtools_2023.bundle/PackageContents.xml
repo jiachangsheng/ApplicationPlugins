@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="SOFiSTiK BiMTOOLS" AppVersion="1.0" Description="SOFiSTiK BiMTOOLS" Author="SOFiSTiK AG" Icon="./Contents/setup.ico" AppNameSpace="appstore.exchange.autodesk.com" ProductCode="{5378C6C1-084D-425E-976A-6230CE9A1FA0}" UpgradeCode="{35BD43F6-B8AB-4D81-A505-87512C5A51D3}" SupportedLocales="Enu|Deu" OnlineDocumentation="http://www.sofistik.com/" FriendlyVersion="4.0" DescriptionDeu="SOFiSTiK BiMTOOLS">
+  <CompanyDetails Name="SOFiSTiK AG" Phone=" " Url="http://www.sofistik.com/" Email="support@sofistik.com" />
+  <RuntimeRequirements OS="Win64" Platform="Revit|Revit Structure" SeriesMin="R2023" SeriesMax="R2023" />
+  <Components Description="SOFiSTiK BiMTOOLS for Revit">
+    <RuntimeRequirements OS="Win64" Platform="Revit|Revit Structure" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="SOFiSTiK BiMTOOLS" Version="1.0" ModuleName="./Contents/sofistik_bimtools.addin" AppDescription="sofistik" />
+  </Components>
+</ApplicationPackage>

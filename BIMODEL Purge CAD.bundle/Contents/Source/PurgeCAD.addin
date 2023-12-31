@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>PurgeCAD</Name>
+    <Assembly>./PurgeCAD.dll</Assembly>
+    <ClientId>d3b1b5df-b1b8-43af-b2ed-b299f5974131</ClientId>
+    <FullClassName>PurgeCAD.MyTab</FullClassName>
+    <VendorId>BMDL</VendorId>
+    <VendorDescription>BIMODEL , www.bimodel.fr, Copyright ©  2020</VendorDescription>
+  </AddIn>
+</RevitAddIns>

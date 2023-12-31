@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDimensionConfigurationData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DimensionConfigurationData>
+    <Name>Overall dimension</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Wall intersections</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Wall intersections</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.OuterEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Columns</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Columns</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.OuterEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Framings</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Framings</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.OuterEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Wall openings</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Wall openings</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.InnerEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Wall Hosted</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.HostedEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Floors</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Floors</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.OuterEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Floor openings</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Floor openings</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.InnerEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Floor Hosted</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.HostedEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Foundations</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Foundations</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.OuterEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+  <DimensionConfigurationData>
+    <Name>Grids</Name>
+    <SubDimensions>
+      <SubDimension>
+        <Name>Overall dimension</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.ExtremsEdgeReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Walls</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralColumns</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFraming</BuiltInCategory>
+          <BuiltInCategory>OST_Floors</BuiltInCategory>
+          <BuiltInCategory>OST_StructuralFoundation</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+      <SubDimension>
+        <Name>Grids</Name>
+        <CollectorTypeFullName>BiMOTiON.Toolbox.Dimensioning.GridReferencesCollector</CollectorTypeFullName>
+        <Categories>
+          <BuiltInCategory>OST_Grids</BuiltInCategory>
+        </Categories>
+      </SubDimension>
+    </SubDimensions>
+  </DimensionConfigurationData>
+</ArrayOfDimensionConfigurationData>

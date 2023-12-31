@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>GetMaterial</Name>
+    <Assembly>GetMaterial.dll</Assembly>
+    <FullClassName>GetMaterial.Revit_Entry</FullClassName>
+    <ClientId>b261178c-bca9-4959-ad10-35ddeee6b7a2</ClientId>
+    <VendorId>AONE</VendorId>
+    <VendorDescription>AONE</VendorDescription>
+  </AddIn>
+</RevitAddIns>

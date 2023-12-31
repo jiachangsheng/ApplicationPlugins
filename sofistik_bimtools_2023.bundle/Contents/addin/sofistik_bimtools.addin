@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>BiMTOOLS</Name>
+    <Assembly>.\sof_rvt_loader_bimtools.dll</Assembly>
+    <AddInId>C66205BC-8214-449B-9F53-7FC2808DD260</AddInId>
+    <FullClassName>Bimtools.Loader.BimtoolsLoader</FullClassName>
+	<VendorId>SOFI</VendorId>
+	<VendorDescription>SOFiSTiK, www.sofistik.de</VendorDescription>
+  </AddIn>
+</RevitAddIns>

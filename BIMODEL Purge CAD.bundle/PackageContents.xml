@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="Purge CAD" Description="Purge CAD Plugin Revit enables users to purge all of the AutoCAD links/imports with just a simple click." AppVersion="1.4.0" FriendlyVersion="1.4.0" ProductType="Application" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="Bahman BANAFSHEH AFSHAN" HelpFile="./Contents/Purge CAD.html" ProductCode="{9D1ECBDF-EE0B-474C-A0B0-3FB6B4B344CC}" UpgradeCode="{BCC619F3-33F1-44CB-94AB-62469FD44F74}" Icon="./Contents/Resources/Icon.ico" OnlineDocumentation="http://www.bimodel.fr">
+  <CompanyDetails Name="BIMODEL" Email="bahman.afshan@bimodel.fr" Url="http://www.bimodel.fr" Phone=" " />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2023" />
+  <Components Description="2018 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="Purge CAD" Version="1.4.0" ModuleName="./Contents/Source/PurgeCAD.addin" AppDescription="Purge CAD" />
+  </Components>
+  <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />
+    <ComponentEntry AppName="Purge CAD" Version="1.4.0" ModuleName="./Contents/Source/PurgeCAD.addin" AppDescription="Purge CAD" />
+  </Components>
+  <Components Description="2020 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+    <ComponentEntry AppName="Purge CAD" Version="1.4.0" ModuleName="./Contents/Source/PurgeCAD.addin" AppDescription="Purge CAD" />
+  </Components>
+  <Components Description="2021 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
+    <ComponentEntry AppName="Purge CAD" Version="1.4.0" ModuleName="./Contents/Source/PurgeCAD.addin" AppDescription="Purge CAD" />
+  </Components>
+  <Components Description="2022 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
+    <ComponentEntry AppName="Purge CAD" Version="1.4.0" ModuleName="./Contents/Source/PurgeCAD.addin" AppDescription="Purge CAD" />
+  </Components>
+  <Components Description="2023 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="Purge CAD" Version="1.4.0" ModuleName="./Contents/Source/PurgeCAD.addin" AppDescription="Purge CAD" />
+  </Components>
+</ApplicationPackage>

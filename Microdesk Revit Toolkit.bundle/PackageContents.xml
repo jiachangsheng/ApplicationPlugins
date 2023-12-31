@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="Microdesk Toolkit" Description="Microdesk Toolkit" AppVersion="4.1.0" FriendlyVersion="4.1.0" ProductType="Application" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="Microdesk" HelpFile="./Contents/help.html" OnlineDocumentation="http://www.microdesk.com" ProductCode="{6D84DA0D-83BE-4DAB-88E8-5C13E7CAC746}" UpgradeCode="{A1260EA6-C1D7-49F6-99FB-D9155059D88F}" Icon="./Contents/Resources/resized_11dd3de5-11b9-48a4-8fcd-b538308a59af_.bmp">
+  <CompanyDetails Name="Microdesk" Email="revittoolkit@microdesk.com" Url="http://www.microdesk.com" Phone=" " />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2016" SeriesMax="R2023" />
+  <Components Description="2016 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2016" SeriesMax="R2016" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2016/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+  <Components Description="2017 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2017" SeriesMax="R2017" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2017/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+  <Components Description="2018 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2018/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+  <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2019/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+  <Components Description="2020 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2020/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+  <Components Description="2021 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2021/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+  <Components Description="2022 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2022/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+  <Components Description="2023 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="Microdesk Toolkit" Version="4.1.0" ModuleName="./Contents/Windows/2023/Microdesk.RevitToolkit.addin" AppDescription="Microdesk Toolkit" />
+  </Components>
+</ApplicationPackage>

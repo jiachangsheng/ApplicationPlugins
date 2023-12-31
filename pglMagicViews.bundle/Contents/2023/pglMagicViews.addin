@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Assembly>pglMagicViews.dll</Assembly>
+    <ClientId>65BCDA5A-38C2-6c2E-A4EF-B3145019A7C8</ClientId>
+    <FullClassName>pglMagicViews.MainApp</FullClassName>
+    <Name>Magic Views</Name>
+    <VendorId>PANGOLIN</VendorId>
+    <Author>Corentin Gartner</Author>
+  </AddIn>
+</RevitAddIns>

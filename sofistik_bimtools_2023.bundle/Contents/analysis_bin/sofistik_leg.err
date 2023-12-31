@@ -1,0 +1,1550 @@
+﻿0000SOFISTIK_LEG - GENERAL REMARKS USED IN PRINTOUT
+0000VERSION ========  130 ================================================
+999 (end Errors)
+000 LEGENDEN TEXTE FUER ALLE SOFISTIK PROGRAMME              LANGUE = 0
+000 Numbers 001 - 9ZZ = general names + SOFIMESH    V 2014 done
+000 Numbers A01 - AZZ = aqua     specific           V 2014 done
+000 Numbers B01 - BZZ = aqb      specific           - , not for V 2014
+000 Numbers C01 - CZZ = bemess   specific           V 2014 parts (echo full yes)
+000 Numbers D01 - DZZ = sofiload,ella specific      - , SOFiLOAD necessary for V 2014
+000 Numbers E01 - EZZ = dyna     specific           -
+000 Numbers F01 - FZZ = maxima   specific           - , not for V 2014
+000 Numbers G01 - GZZ = tendon   specific           -
+000 Numbers H01 - HZZ = csm,hydra... specific       V 2014 CSM
+000 Numbers I01 - IZZ = ase,star2 specific          - , STAR2 not for V 2014
+000 -------------------------------------------------------------------------
+001Lastfall<                          = LC   / LF
+002Bemessungsfall<                    = DC   / BF
+003Bauphase<                          = CS   / BA
+004Primärlastfall<                    = PLC  / PLF
+005Ergebnislastfall<                  = RLC  / ELF
+
+010Materialnummer<                    = MAT
+011Bewehrungsmaterialnummer<          = MRf  / MBw
+012Bügelbewehrungsmaterial<           = MRfL / MBwL
+013umgebendes Referenzmaterial<       = MRef / MRef
+018Bettungsprofil<                    = NoP  / NrP
+019Querschnittsnummer<                = NoS  / NrQ
+01LBewehrungsrang<                    = LAY  / Rng
+
+020Elementnummer<                     = NO   / Nr
+021primäre Gruppennummer<             = GRP  / Grp
+022sekundäre Gruppennummer<           = SGRP / SGrp
+02AStabschnitt<                       = BSCT / ABSC
+02BStabelement<                       = BEAM / STAB
+02CSeilelement<                       = CABL / SEIL
+02DDämpferelement<                    = DAMP / DAMP
+02ERandelement<                       = BOUN / RAND
+02FFlexibilitätselement<              = FLEX
+02GResult Set<                        = RSET
+02KKinematische Bedingung<            = KINE
+02MMassenelement<                     = MASS
+02NKnoten<                            = NODE / KNOT
+02PPfahlelement<                      = PILE / PFAH
+02QQUAD-Element<                      = QUAD
+02RExterner Stabschnitt<              = SECT
+02SFederelement<                      = SPRI / FEDE
+02TFachwerkelement<                   = TRUS / FACH
+02URohrelement<                       = PIPE / ROHR
+02VVolumenelement<                    = BRIC
+02XKnoten von QUAD-Elementen<         = QUAK
+02YKnoten von BRIC-Elementen<         = BRIK
+
+030Faktor der Steifigkeiten<
+
+100Längskraft<                        = N
+101Normalkraft<                       = N,Pn
+102Transversalkraft<                  = Ty,Tz,Pt
+103Schubkraft<                        = Vy,Vz
+104Biegemoment<                       = My,Mz,mx,my
+105Torsionsmoment<                    = Mt,mxy
+106primäres Torsionsmoment<           = Mtp
+107sekundäres Torsionsmoment<         = Mts,Mt2
+108Wölbmoment<                        = Mb
+109Zusatzmomente aus Imperfektion<    = eMy,eMz
+10AVorspannungsnormalkraft<           = N,p
+10BVorspannungsquerkraft<             = Vy,p
+10CVorspannungsbiegemoment<           = My,p
+10DVorspannungstorsionsmoment<        = Mt,p
+10EBettungsspannung<                  = ps
+
+10TVerwindung<                        = u-w
+10UVerformung<                        = u-x,u-y,u-z
+10Vtranslatorische Geschwindigkeit<   = v-x,v-y,v-z
+10Wtranslatorische Beschleunigung<    = a-x,a-y,a-z
+10XVerdrehung<                        = phi-x,phi-y,phi-z
+10YWinkelgeschwindigkeit<             = ome-x,ome-y,ome-z
+10ZWinkelbeschleunigung<              = alf-x,alf-y,alf-z
+
+110Normalsteifigkeit<                 = EA
+111Biegesteifigkeit<                  = EIy,EIz
+112Schubsteifigkeit<                  = GAy,GAz
+113Torsionssteifigkeit<               = GIt
+114Wölbsteifigkeit<                   = ECM
+115transversale Masse<                = m
+116Rotationsmasse<                    = theta
+11TTemperatur<                        = T
+11UNormalspannung<                    = sig
+11VSchubspannung<                     = tau
+
+120Anstellwinkel<                     = alf
+121Widerstandsbeiwert<                = cd,cy
+122Auftriebsbeiwert<                  = cl,cz
+123Hydrodynamischer Koeffizient<      = cm
+124Momentenbeiwert<                   = cm
+125Quertriebsbeiwert<                 = c-lat
+126Strouhalzahl<                      = Sr
+127Galloping Beiwert<                 = ag
+128Bezugssystem für Strömungsbeiwerte<= Sr
+
+  ------------------------------------- SOFiMESH
+    SOFiMSHA begin 301
+
+301elastische Bettung senkrecht/tangential zur Fläche<       = C,CT       Flächenelemente
+311Nummer des Bettungsprofils<         =NrP                               Stabelemente
+312Referenzachse mit Stationierung<    =Referenz                          Stabelemente
+313"0": Stabachse ist bezogen auf den Querschnittsnullpunkt, "S": auf den Schwerpunkt< =e Stabelemente
+314Knicklängenbeiwert<                 =beta-y,beta-z                     Stabelemente - Erweiterte Eigenschaften
+321Elementanzahl in der Gruppe<        =Anzahl                            Gruppen
+322Elementtyp<                         =Typ                               Gruppen
+323minimale/maximale Elementnummer<    =Min-Nr,Max-Nr                     Gruppen
+324Bezeichnung der sekundären Gruppe<  =Grp                               Gruppen -> besser: Sekundäre Gruppen
+325Bauabschnittsnummer der Gruppenaktivierung/-deaktivierung< =BA-Anfang,BA-Ende Gruppen
+331Anfangs-/Endknoten<                 =Von,Bis                           Randelemente
+332Inkrement<                          =Delt                              Randelemente
+333Art der Stützung<                   =Typ                               Randelemente
+334Zuwachsrichtung ("S": entlang des Randes)< =Mess                       Randelemente
+335Bettungskonstante am Anfang/Ende<   =CA,CE                             Randelemente
+336Einheit der Bettung<                =DIM                               Randelemente
+341Richtungskomponente<                =dX,dY,dZ                          Federelemente
+342Axiale / laterale Federsteifigkeit< =CP,CT                             Federelemente
+343Drehfedersteifigkeit<               =CM                                Federelemente
+344Exponent der nichtlinearen Dämpfung< =e-P,e-T,e-M                      Federelemente
+345Dämpfung<                           =DP,DT,DM                          Federelemente
+346Nummer Arbeitslinie / Material (*)< =MNr                               Federelemente - nichtlineare Eigenschaften
+347Referenzfläche<                     =A/I-ref                           Federelemente - nichtlineare Eigenschaften
+348Vorspannung<                        =Vorsp.                            Federelemente - nichtlineare Eigenschaften
+349Reibbeiwert<                        =tan-r                             Federelemente - nichtlineare Eigenschaften
+350Dilatationswert<                    =tan-d                             Federelemente - nichtlineare Eigenschaften
+361Elementlänge<                       =L                                 Fachwerkelemente / Seilelemente
+371translatorische Masse<              =M-X,M-Y,M-Z                       Einzelmassen
+372rotatorische Masse<                 =M-Xx,M-YY,M-ZZ                    Einzelmassen
+381DoF = Fak1 * DoF1@Knoten1 + Fak2 * DoF2@Knoten2 + ...< =Gleichung      Kinematische Abhängigkeiten
+382Koppelbedingungen<                  =Typ                               Kinematische Abhängigkeiten
+383Abstand der Knoten<                 =deltaX,deltaY,deltaZ              Kinematische Abhängigkeiten
+384Faktor für Zwischenknoten<          =df                                Kinematische Abhängigkeiten
+385Richtung der Kopplung<              =dX,dY,dZ                          Kinematische Abhängigkeiten
+386abhängiger Freiheitsgrad<           =DoF                               Kinematische Abhängigkeiten
+390Periode für Frequenzabhängigkeit<   =T                                 Impedanzen
+391Werte der Flexibilitätsmatrix<      =F-xx,F-yy,F-zz,FR-xx...           Flexibel gestützte Knoten
+392Werte der Steifigkeitsmatrix<       =S-xx,S-yy,S-zz,SR-xx...           Explizite Steifigkeiten
+393Werte der Dämpfungsmatrix<          =D-xx,D-yy,D-zz,DR-xx...           Explizite Dämpfungen
+394Werte der Massenmatrix<             =M-xx,M-yy,M-zz,MR-xx...           Explizite Massen
+
+    SOFiMSHC begin 501
+501Auflagerbedingungen<                =Auflager                          Strukturpunkte
+502Richtung des lokalen Koordinatensystems<   =X,Y,Z[-]                   Strukturpunkte
+503Breite Auflager / Netz in lokale Richtung< =hx,hy                      Strukturpunkte
+504Plattendicke<                       =t                                 Strukturpunkte
+511lokale Abmessung<                   =dx,dy                             Strukturpunkte - Stützenkopfeigenschaften
+512Fläche Stützenkopf<                 =A                                 Strukturpunkte - Stützenkopfeigenschaften
+513Dicke Stützenkopf<                  =t                                 Strukturpunkte - Stützenkopfeigenschaften
+521Strukturpunkt Anfang / Ende<        =SPt-a,SPt-e                       Strukturlinien
+522Referenzlinie, -achse<              =Ref                               Strukturlinien
+523Elementtyp<                         =Typ                               Strukturlinien
+531Art der Lagerung / Koppelbedingung< =Eigenschaften                     Strukturlinien - Auflager und Elastische Bettungen
+532axiale / laterale Bettung<          =Ca,Ct                             Strukturlinien - Auflager und Elastische Bettungen
+533Torsionsbettung<                    =Cm                                Strukturlinien - Auflager und Elastische Bettungen
+534Breite der Lagerung<                =w                                 Strukturlinien - Auflager und Elastische Bettungen
+535Explizite Richtungskomponente<      =dX,dY,dZ                          Strukturlinien - Auflager und Elastische Bettungen
+536Zusätzliche Rotation um Stabachse<  =dRot                              Strukturlinien - Auflager und Elastische Bettungen
+540Aktion der Fläche<                  =Typ                               Strukturvolumen - Geometriedaten
+541Nummer der Strukturfläche<          =Surf                              Strukturvolumen - Geometriedaten
+551Richtung der lokalen x-Achse<       =locX                              Strukturflächen
+552orthotrope Dicke<                   =tx,ty,tz                          Strukturflächen - Orthotrope Dicken, Auflager und Elastische Bettungen
+553Art der Strukturlinie<              =Typ                               Strukturflächen - Erweiterte Eigenschaften
+554Nummer der Strukturlinie<           =Linie                             Strukturflächen - Erweiterte Eigenschaften
+555Dicke der Fläche an der Strukturlinie<  =t                             Strukturflächen - Erweiterte Eigenschaften
+556Abstand (Offset) der Region zur Kante<  =Dist                          Strukturflächen - Erweiterte Eigenschaften
+
+   Entwurfselemente - Grundriss der Achse
+601Nummer des Tangentenschnittpunkts<  =Title                             Tangentenschnittpunkte
+602Stationswert<                       =S                                 Tangentenschnittpunkte
+603Koordinaten Tangentenschnittpunkt<  =X,Y                               Tangentenschnittpunkte
+604Radius in der Mitte<                =R                                 Tangentenschnittpunkte
+605Länge des ersten Übergangsbogens<   = La                               Tangentenschnittpunkte
+606Länge des zweiten Übergangsbogens<  = Le                               Tangentenschnittpunkte
+607Krümmungswinkel<                    = Tau                              Tangentenschnittpunkte
+608Koordinaten Startpunkt<             =X,Y                               Segmente
+609Länge des Segments<                 =L                                 Segmente
+610Radius Start- / Endpunkt<           =Ra,Re                             Segmente
+611Klothoidenparameter R*L=A²<         =A                                 Segmente
+612Normalenrichtung<                   =Nx,Ny,Nz                          Segmente
+613Stationswert am Startpunkt<         =S                                 Segmente
+614Höhe am Startpunkt<                 =H                                 Segmente
+
+   Gradiente - Höhenband der Achse
+621Höhe des Gradientenpolygons<        =H                                 Tangentenschnittpunkte
+622Ausrundungsradius<                  =R                                 Tangentenschnittpunkte
+623Neigung<                            =i                                 Segmente
+
+   Variablen
+631Wert für die Station<               =S                                 Variablen
+632Wert für die Variablen<             =V                                 Variablen
+633Wert für die Ableitung der Variablen<  =DV                             Variablen
+634Art des Stützpunkts<                =Typ                               Variablen
+
+   Placements
+641Typ des Placements<                 =Typ                               Placements
+642Auswahl der Sekundärachse<          =IDS                               Placements
+643Punktnummer generiert am Placement< =NPT                               Placements
+644Gruppennummer der Stäbe im folgenden Abschnitt< = GRP                  Placements
+645Querschnittsnummer der Stäbe im folgenden Abschnitt< = NOS             Placements
+646Verdrehung des Lagers um die globale Z Achse< = ALF                    Placements
+647Verdrehung des Lagers um die lokale z Achse<  = ALFZ                   Placements
+648Querneigung rechts / links<         = INCR,INCL                        Placements
+649Koordinaten des Placements<         = X,Y,Z                            Placements
+650Differenz in Z/Differenz der Länge< =dZ/dL                             Placements
+
+   Geometrieachse
+661Koordinate des Kontrollpunkts<      =X,Y,Z                             Kontrollpunkte
+662Wichtung<                           =w                                 Kontrollpunkte
+
+  ------------------------------------- AQUA / AQB
+
+A01Querschnittsfläche<                = A
+A02Schubverformungsfläche<            = Ay,Az,Ayz
+A03Schubspannungsfläche<              = Av
+A04Torsionsträgheitsmoment<           = It
+A05Flächenträgheitsmoment<            = Iy,Iz,Iyz
+A06polares Trägheitsmoment<           = Ip
+A07statische Fläche<                  = Z / S
+A08Biegewiderstand<                   = W
+A09Ordinate des plastischen Schwerpunkts< yp,zp
+A0AQuerschnittsordinate<              = y,z
+A0BOrdinate des elastischen Zentrums< = yc,zc
+A0COrdinate des Schubmittelpunkts<    = ysc,zsc
+A0DRandkoordinaten bezogen auf das Zentrum< = ymin,ymax,zmin,zmax
+A0EMindestwert des inneren Hebelarms< = hymin,hzmin
+A0FTorsionswiderstand<                = 1/Wt,1/Wt2
+A0GSchubwiderstand<                   = 1/WVy,1/WVz
+A0HEinheitsverwölbung<                = w,wmin,wmax
+A0IWölbflächen<                       = ASwyy,ASwzz
+A0JQuerschnittsstrecke<               = ry,rz
+A0KErsatzhohlquerschnitt (Bredt)<     = Ak
+A0LBruttobetonfläche<                 = Ab
+A0MWölbwiderstand<                    = Cm
+A0NWölbschubwiderstand<               = Cms
+A0OKnickspannungskurve (BDK, y-y, z-z)< = bcy
+A0Peffektive Dicke<                   = d-eff
+A0QOrdinate des Massen-Schwerpunkts<  = yg,zg
+A0Rtorsionswirksame Länge<            = L-Tors
+A0Seffektive Fläche<                  = A-eff
+A0TVerteilung der Bewehrung, E: einzeln, T: total<          = DIST
+A0UUmfang/Anstrichsfläche<            = U
+A0Vgemittelter Torsionswiderstand<    = 1/WTm
+A0WNichteffektivität (N=Normalkraft, Y=Y-Ordinate/Querbiegung, Z=Z-Ordinate/Hauptbiegung)<  = eff
+A0XEigenschaftssatz / Belüftungsgrad< = exp
+A0YReferenzfläche<                    = Aref
+A0ZSchubverteilungsfaktor<            = fVy,fVz
+
+A10Dicke<                             = t
+A11Höhe<                              = h
+A12Breite<                            = b
+A13Durchmesser<                       = d
+A14Tiefe<                             = d
+A15obere Höhe des Querschnitts<       = h
+A16obere Breite des Querschnitts<     = b
+A17untere Höhe des Querschnitts<      = h
+A18untere Breite des Querschnitts<    = b
+A19Hebelarm der inneren Kräfte<       = z
+A1ARadius<                            = R
+A1Beffektive Breite<                  = B-eff
+A1CStegdicke<                         = s
+A1DFlanschdicke<                      = t
+A1EAusrundungsradius<                 = r1,r2
+A1FAbstand Beuleinspannungen<         = Fix
+A1Grelative Position der Einspannung< = xS
+A1HMomentenbezugspunkt<               = ycm,zcm
+A1IBezugspunkt für Biegespannungen<   = ysb,zsb
+A1JWert für Bemessung richtet sich nach Lastzustand<
+A1KÄquivalente Rauigkeit (EN 1991-1-4, Tab. 7.13)<
+A1LAnzusetzende Höhe des Verkehrsbandes<
+A1MEisansatz oder mariner Bewuchs<
+A1NBezugspunkt für Normalkraft<       = ysn,zsn
+A1OHauptträgheitsmomente und Winkel der Hauptachsen<
+A1PTyp der Schubverbindung<
+A1QNeigung der Stabachse zur Referenzachse<
+A1RAngesetzte Neigung der Druck- und Zuggurte für Querkraftanteil<
+A20Bewehrungsfläche<                  = As,Aso,Asu
+A21Stabdurchmesser<                   = D,Do,Du,Ds
+A22Überdeckung<                       = c
+A23statischer Randabstand<            = h
+A24Stababstand<                       = a
+A25Bewehrungsradius<                  = R
+A26Bügelbewehrung<                    = Asb
+A27Neigung der Bügel<                 = phib
+A28Vorspannung<                       = sig-0
+A29wirksame Fläche für Rissnachweis<  = ar
+A2AQuerspannung<                      = sig-t
+A2BGesamtbreite<                      = b
+A2CFugenparameter<                    = c,mue
+A2Dminimaler Stababstand<             = a-min
+A2Emaximaler Stababstand<             = a-max
+A2Fminimale Bewehrungsfläche<         = As-min
+A2Gmaximale Bewehrungsfläche<         = As-max
+A2MBiegemoment senkrecht zum Schnitt< = M-t
+A2NNormalkraft senkrecht zum Schnitt< = N-t
+A2REffektiver Bewehrungsgrad<         = rho
+A2Smittlere Rissdehnung<              = eps-sr
+A2Tmittlerer Rissabstand<             = sr-m
+A2VTeilsicherheitsbeiwert Minimierung von Biegespannungen (EN 1993-1-11, Tab. 6.2)< = gamma-R
+A2WEigengewicht<                      = W
+A2XSeilfaktoren nach DIN 3051<
+A2YSeilfaktoren nach EN 12385-4<
+A2ZBruchkraft<                        = Z (bei Seilen)
+
+A30Koordinaten des Startpunktes<      = X,Y,Z BOHR
+A31Richtung des Bohrprofils<          = dX,dY,dZ
+A32Rotationswinkel der lokalen Achsen< = a
+A33Ordinate der Profilachse<          = s
+A34Parameter des Bettungsverlaufs<    = K0-a,K1-a,K2-a,K3-a,K0-t,K1-t,K2-t,K3-t
+A35Mantelreibung<                     = M0
+A36maximale Mantelreibung<            = C0
+A37Tangens des Wandreibungswinkels<   = tanR
+A38Tangens des Wanddilatanzwinkels<   = tanD
+A39Seitendruckbeiwert<                = KSIG
+A3Amaximale Pfahlfußkraft<            = Pmax
+A3BFormfaktoren als Umfangsvariation< = P0,P1,P2,P3
+A3Cmaximaler Bettungwert<             = Pmax
+A3DZuwachs des Steifemoduls<          = dEs
+A3ETyp der Steifemodulvariation<      = VARI
+A3Fmaximale Pfahlfußpressung<         = Pmax
+A3Gmaximale Querpressung<             = Pmal
+A3Htiefster Grundwasserstand<         = Hgwl
+A3Ihöchster Grundwasserstand<         = Hgwh
+A3JSohlwiderstand<                    = sigRd
+A3KEinbindetiefe\Fundamentbreite<     = d\b'
+A3LFaktor auf Sohlwiderstand<         = f
+A3Mspezifisches Gewicht<              = gam
+A3Nspezifisches Gewicht unter Auftrieb< = gama
+
+A40Faserrichtung, Winkel abweichend zur lokalen x Achse des Elementes<      = BETA FLAY
+A41Relative Dicke<                                                          = T FLAY
+
+ACCRundlitzenseil mit CF<             = Seilmaterialien
+ACFVollverschlossenes Spiralseil<
+ACNOffenes Spiralseil, nichtrostend<
+ACOOffenes Spiralseil<
+ACPParalleldrahtbündel<
+ACRRundlitzenseil mit CWR<
+ACSLitzenbündelseil<
+ACWRundlitzenseil mit CWR, nichtrostend<
+
+AM0Sicherheitsbeiwert für Querschnittsnachweise und nichtlineare Rechnungen mit charakteristischen Werten<
+AM1Sicherheitsbeiwert für Stabilitätsnachweise und nichtlineare Rechnungen mit Bemessungswerten<
+AM2Sicherheitsbeiwert für Bruchversagen oder nichtlineare Rechnungen mit rechnerischen Materialwerten<
+AM3Sicherheitsbeiwert für die Vorberechnung der Bemessungswerte der Querschnittstragfähigkeit<
+
+AMMMaterialsicherheit γ-M<
+AMSBaustahl<
+AMTBeton<
+AMUBewehrungsstahl<
+AMVHolz<
+AMWAllgemeines Material<
+AMXMaterial<
+AMYAluminium<
+AMZSpannstahl<
+
+AS0Keine gültige Bewehrung definiert<
+AS1Bewehrung ist in den Querschnittswerten nicht berücksichtigt<
+AS2Bewehrung ist im Eigengewicht nicht berücksichtigt<
+
+   ------------------------------------- AQB
+    AQB
+
+B00Art und Gruppe der Einwirkung, sowie Überlagerungsmethode<
+B01Referenzpunkt der Schnittgrößen<
+B02Querschnitt auf den die Schnittgrößen wirken<
+B03Querschnitt für externe Stabschnitte<
+B04Bauphasen<
+B05Reduktionsfaktor für die Spannstahlfläche<
+B06System/Knicklängen-Beiwert für z-Richtung bzw. starke Achse<
+B07System/Knicklängen-Beiwert für y-Richtung bzw. schwache Achse<
+B08Elementtyp<
+B09Bereich der Elementnummern<
+B0AFaktor der Schwingbreite für Betonstahl<
+B0BFaktor der Schwingbreite für Spannstahl<
+B0CFaktor der Schwingbreite für Bügelbewehrung<
+B0DFaktor der Schwingbreite für Beton<
+B0EGesamtneigungen zur Korrektur der Schubkräfte<
+B0FAbstand des Anschnitts für Ausrundung<
+B0GWiderstandsmoment<
+B0HSpannkraft<
+B0ISpannstahlfläche<
+B0JSpannstahlspannung<
+B0KKomponenten der Vorspannung in lokalen Richtungen<
+B0LLänge der Strukturlinie<
+B0MFaktor der Schwingbreite für sonstige Materialien<
+B0Xx-Wert des Stabschnitts<
+B0Yx-Wert des Stabschnitts oder Station<
+B10Zugkraft (EN 1993-1-1, 6.2.3, Gl.6.5)<
+B11Druckkraft (EN 1993-1-1, 6.2.3, Gl.6.9)<
+B12Biegung (EN 1993-1-1, 6.2.5, Gl.6.12)<
+B13Querkraft (EN 1993-1-1, 6.2.6, Gl.6.17)<
+B14Torsion (p)rimär und (s)ekundär (EN 1993-1-1, 6.2.3, Gl.6.23)<
+B15Abminderungsbeiwert (EN 1993-1-1, 6.2.8, Gl.6.45)<
+B16Biegung, Querkraft (EN 1993-1-1, 6.2.8, Gl.6.30)<
+B17Biegung, Quer- und Normalkraft M/Mred*(1-0.5a)+N/Npl (EN 1993-1-1, 6.2.9, Gl.6.32/6.36-6.38)<
+B18Doppelbiegung, Quer- und Normalkraft MyVz+MzVy+N (EN 1993-1-1, 6.2.9-10, Gl.6.41 linearisiert)<
+B19Formfaktor Wpl/Wel (EN 1999-1-1, 6.2.5.1 (2))<
+B1ASpannungen an den Endpunkten<
+B1Btatsächliches c/t oder D/t-Verhältnis (Querschnittsklasse)<
+B1CGrenzwert des c/t-Verhältnises (Grundwert * Spannungsfaktor)<
+B1DDicke des Querschnittsteils<
+B1EQuerschnittsklasse<
+B1Fc/t-Verhältnis (QKL)<
+B1GVergleichsspannung = Wurzel des Fließkriteriums aus allen Anteilen (EN 1993-1-1, 6.2.1 (5), Gl.6.1)<
+B1Hlineare Addition aller Effekte inklusive Torsion + Wölbkrafttorsion (EN 1993-1-1, 6.2.1 (7), Gl.6.2)<
+B1IGesamtinteraktion aller Effekte inklusive Torsion + Wölbkrafttorsion (EN 1993-1-1, 6.2.8-10, Gl.6.41+6.23)<
+B1JBiegeknicken ohne Drillknicken (EN 1993-1-1, 6.3.1.1)<
+B1KBeulfaktor<                  = ksig
+B1LLänge eines Querschnittsteils oder Rohrdurchmesser<  = D/c
+B1MKlassifizierungsindex des Querschnitts (z.B. 1.5 => c/t in der Mitte zwischen QKL 1 und 2)<
+B1NSpannungsabhängiger Ausnutzungsgrad (siehe Handbuch AQB 2.3.2)<
+B1QKlassifizierung des Querschnitts ergibt sich aus einem niedriger beanspruchtem Bauteil<
+B1SSpannung in der Bewehrung<   = sig,s
+B1TSpannung im Spannstahl<      = sig,t
+B1XExponenten für die zweiachsige Interaktion nach EN1993-1-1 Gleichung 6.41<
+B1YSpannungsverhältnis<         = psi
+B1ZZugspannungsanteil<          = alf
+
+B20gesamte Längsbewehrung<
+B21geometrischer Anteil der Bewehrung<
+B22Längsbewehrung je Rang<
+B23nominale Längsbewehrung pro m des Umfangs des Ersatzquerschnitts infolge Torsion (Mt/2Ak)<
+B24gesamte Bügelbewehrung je Rang pro geschnittenem Bauteil<
+B25Anteil der Bügelbewehrung für Torsion der maßgebenden gesamten Bewehrung im ungünstigsten Schubschnitt<
+B26Versatzmaß der Längsbewehrung (0.0 falls bereits über Normalkraft berücksichtigt)<
+B27Dehnungen in den außenliegenden effektiven Fasern<
+B28Sicherheitsbeiwert Beton<
+B29Sicherheitsbeiwert Bewehrung<
+B2Aglobaler Sicherheitsbeiwert für Beton unter Biegung<
+B2Bglobaler Sicherheitsbeiwert für Beton unter Druckkraft<
+B2Cglobaler Sicherheitsbeiwert für Beton unter Schubbeanspruchung<
+B2Dglobaler Sicherheitsbeiwert für schlaffe Bewehrung<
+B2Eglobaler Sicherheitsbeiwert für Spannstahl<
+B2Fglobaler Sicherheitsbeiwert für Baustahl<
+B2HDehnungsbegrenzung Betonrandstauchung<
+B2IDehnungsbegrenzung zentrische Betonstauchung<
+B2JDehnungsbegrenzung für Druckzonenhöhe x/d die eine symmetrische Bewehrung auslöst<
+B2KDehnungsbegrenzung für Zug bzw. Verfestigung in der Bewehrung<
+B2Labsolute Dehnungsbegrenzung für Spannstahl<
+B2Minkrementelle Dehnungsbegrenzung für Spannstahl<
+B2NAbstand der resultierenden Druck- und Zugkräfte zum Schwerpunkt<
+B2Oansetzbarer Hebelarm der inneren Kräfte für den Schubnachweis (Einfluss der Lage der Druckbewehrung)<
+B2PBalanced Force (Gleichgewichtskraft bei Grenzdehnung S1-C1)<
+B2Qanteilige Längskraft im abgetrennten Querschnittsteil<
+B2Rrelative Tragfähigkeit<
+B2SAusnutzung<
+B2TVeränderung der Querkräfte aus dem Spannungszuwachs der Spannstränge<
+B2UVerhältnis von abgetrennter Druckkraft D und Zugkraft Z sowie zum maximalen Schubfluß T<
+B2Vangesetzte Längskraft aus Querkraft und Torsion<
+B2WTorsionslängsbewehrung wird nun zu den erforderlichen Biegebewehrungen hinzuaddiert oder mit Druckkräften verrechnet<
+B2XWert wird aus der maximalen Höhe der Druckzone aus dem Umlagerungsgrad δ ermittelt (EN 1992-1-1, 5.5)<
+B2YTorsionslängsbewehrung bei 45° Druckstrebenneigung, wird nach der Schubbemessung entsprechend überprüft/erhöht<
+B2ZTorsionslängsbewehrung bei 45° Druckstrebenneigung, die sich daraus ergebende Normalkraft wurde bereits berücksichtigt<
+
+B30aufnehmbare Schnittgrößen<
+B31Höhe der Druckzone<
+B32Dehnung im elastischen Schwerpunkt<
+B33Faktor der Gleitung oder Spannungen<
+B34Spannung im Querschnitt<
+B35Spannung in der schlaffen Bewehrung<
+B36Spannung im Spannstahl<
+B37Schnittpunkte der Nulllinie mit den lokalen Koordinatenachsen<
+B38Krümmungen<
+B39Dehnungen<
+B3AAbminderung der Steifigkeit<
+B3Beffektiver E-Modul bezogen auf den Bruttoquerschnitt<
+B3Ceffektiver G-Modul bezogen auf den Bruttoquerschnitt<
+B3Deffektiver Durchmesser der Bewehrung<
+B3Emittlere Rissdehnung<
+B3FDehnungen am Rande der effektiven Zone<
+B3GDehnungen in der Mitte von Gurtflächen<
+B3HHöhe der effektiven Zone<
+B3IVerbundspannung<
+B3JReduktion der Spannstahlspannung infolge Verbund<
+B3Minnere Schnittgrößen (Integrale der nichtlinearen Spannungen)<
+B3RErstrissspannung<
+B3SEffektive Stahlspannung<
+B3Ttabellierte Stahlspannung<
+B3UAbstand der Bewehrungseisen<
+B3VRissabstand<
+B3WRissbreite<
+B3ZBewehrung in der effektiven Zugzone<
+
+B41relative Luftfeuchtigkeit<               = RH
+B42Temperatur im Kriechabschnitt<           = TEMP
+B43Lastfall mit Temperaturverteilung<       = LCT
+B44reale Dauer des Kriechabschnitts<          DT
+B45realer Zeitpunkt am Ende des Abschnitts<   T
+B46effektives Alter zu Beginn des Abschnitts< T0
+B47effektives Alter zu Ende des Abschnitts<   TW
+B48Zeitpunkt für den Beginn des Trocknens<    TS
+B49Relaxationsbeiwerte<
+B4AKriechbeiwert<                             phi-f
+B4BGrundmaß des Kriechens<                    phi-bc
+B4CGrundmaß des Trocknungskriechens<          phi-dc
+B4DRückkriechen/Verzögerte Elastizität<       phi-v
+B4ESchwinddehnung<                            eps
+B4FGrundmaß des autogenen Schwindens<         eps-ca
+B4GGrundmaß des Trocknungsschwindens<         eps-cd
+B4IZeitbeiwert des Kriechens<                 bet-f
+B4JZeitbeiwert des Grundkriechens<            bet-bc
+B4KZeitbeiwert des Trocknungskriechens<       bet-dc
+B4LZeitbeiwert der verzögerten Elastizität<   bet-v
+B4MZeitbeiwert des Schrumpfens<               bet-ca
+B4NZeitbeiwert des Trocknungsschwindens<      bet-cd
+B4OZeitbeiwert des Schwindens<                bet-f
+B4PSchnittgrößen aus Verlusten im Spannstahl und Bewehrungen<
+B4QSchnittgrößen auf Brutto-Querschnitt für kriechende Spannung<
+B4RSchnittgrößen auf Brutto-Querschnitt für resultierende Spannung<
+B4SSpannungen im Material<
+B4TVerluste der Vorspannung<
+B4UDehnungen des Gesamtquerschnitts<
+B4VUmrechnungsverhältnis aus Tangentenmodul zu Sekantenmodul im System<
+B4Wwirksame Bauteildicke (2A/U)<
+B4Xrechnerischer Kriechbeiwert<               phi-f, delta-phi
+B4Yrechnerische Schwinddehnung<               Delta-Eps
+
+B50Bemessungswert der Betonfestigkeit<
+B51Bemessungswert der Betonzugfestigkeit<
+B52Bemessungswert der Bügelfestigkeit<
+B53zulässiger Schub aus Querkraft<
+B54zulässiger Schub aus Torsion<
+B55zulässiger kombinierter Schub in der Mittelfläche<
+B56zulässiger kombinierter Schub<
+B57zulässige Hauptdruckspannung<
+B58zulässige Hauptdruckspannung aus Querkraft<
+B59zulässige Hauptdruckspannung aus Torsion<
+B5ABemessungswert des Schubs für den Betonanteil<         ! tau-rd / vc
+B5BSchubspannungsgrenze für eine reduzierte Schubdeckung<  ! tau-02
+B5CSchubspannungsgrenze für eine Mindestschubbewehrung< ! tau-01
+B5DSchubspannungsgrenze für eine erforderliche Schubbewehrung< ! tau-01
+B5ESchubspannungsgrenze für eine erforderliche Torsionsbewehrung< ! tau-01t
+B5FKoeffizienten der Schubtragfähigkeit<
+B5GBewehrungsanteil der Zugbewehrung<
+B5HNutzhöhe des Querschnitts<
+B5KMittlere Längsspannung N/A für Stege, bzw. reale Spannung in Gurtmitte<
+B5LLängsdehnung<
+B5MVerhältnis Rissmoment zu Bruchmoment<
+B5NBügelbewehrung im Teilschnitt (Gesamtwerte müssen für jeden Steg/Gurt addiert werden)<
+B5PNeigung der Druckstrebe<
+B5QZustand (I = überdrückt, A = ungerissen, B = gerissen, E = reduzierte elastische Spannungen)<
+B5RNeigung der Bügel<
+B5SBezeichnung des Schubschnitts<
+B5TSchubfluss quer zum Schnitt<
+B5USchub aus Querkräften<
+B5VSchub aus Torsionsmomenten<
+B5WBreite des Schnitts<
+B5XReduktionsfaktor aus Querschnittsabmessungen<
+B5YKoeffizient für Platten oder Kreisquerschnitte<
+B5ZHebelarm oder +dF/-dF bei Differenz der Längskräfte oder nn%E für abgeminderte elastische Spannungen<
+
+   ------------------------------------- BEMESS
+    BEMESS
+
+C01Nennfestigkeit des Betons<         = fck                             Material
+C02Rechenfestigkeit des Betons<       = fc                              Material
+C03Zugfestigkeit des Betons<          = fctm                            Material
+C04Fließgrenze des Betonstahls<       = fy                              Material
+C05Zugfestigkeit des Betonstahls<     = ft                              Material
+C06Verhältnis E-Moduli Stahl/Beton<   = N                               Material
+C07minimale Querbewehrung<            = minQ                            Material
+C08Charakter der Belastung<           = Art                             Material
+C09Materialsicherheit SC1/SC2 =  Biegeglieder/Druckglieder< = SC1,SC2      Material  - Sicherheiten
+C10Materialsicherheit Betonstahl Biegeglieder/Druckglieder< = SS1,SS2                  Material  - Sicherheiten
+
+C21Abstand Stabmitte zur Oberfläche oben / unten< = d1-o,d1-u,d2-o,d2-u  Bewehrungsparameter zweilagige Bewehrung
+C22Stabdurchmesser oben / unten<      = ds-o, ds-u                      Bewehrungsparameter zweilagige Bewehrung
+C23Einzuhaltende Rissbreite oben / unten<           = wk-o, wk-u        Bewehrungsparameter zweilagige Bewehrung
+C24Maximale Stahlspannung im Gebrauchsnachweis oben / unten<  = sigso, sigsu     Bewehrungsparameter zweilagige Bewehrung
+C25Mindestbewehrung oben / unten<     = aso, asu                        Bewehrungsparameter zweilagige Bewehrung
+
+C31I=Innenstütze, R=Randstütze, E=Eckstuetze, F=Fundament, W=Wandende, L=Wandeck, U=Unterzugende< = Typ     Zusammenfassung Durchstanznachweis
+C37Bemessungswert der Querkraft (abzüglich Bodenpressung)<       = V-Ed    Zusammenfassung Durchstanznachweis
+C38Stützenabmessung bzw. Wanddicke am Wandende<                  = Stütze  Zusammenfassung Durchstanznachweis
+C39Umfang kritischer Rundschnitt, um Öffnungen+Ränder reduziert< = ucrit   Zusammenfassung Durchstanznachweis
+C40ucrit entspricht ... % des Vollkreisese (ucrit/u0-tot)<       = %u0     Zusammenfassung Durchstanznachweis
+C41Exzentrizitätsbeiwert<             = beta                               Zusammenfassung Durchstanznachweis
+C42Schubspannung am reduzierten kritischen Rundschnitt<  = v-max           Zusammenfassung Durchstanznachweis
+C43Schubbewehrung Summe aller nperi perimeter (Rundschnitte)<    = Asssum  Zusammenfassung Durchstanznachweis
+C44Mindestens einzulegende Biegebewehrung im Durchstanzbereich<  = asl     Zusammenfassung Durchstanznachweis
+C45Bis zu diesem perimeter muß Schubbewehrung eingelegt werden<  = nperi   Zusammenfassung Durchstanznachweis
+
+C51Schwingbreite Längsbewehrung<                         = Schwingbreite  Stahlspannungen, Betondruckspannungen, Schwingbreiten
+C52Schwingbreite Schubbewehrung<                         = Bügel          Stahlspannungen, Betondruckspannungen, Schwingbreiten
+C53maximale Betondruckspannung<                          = Beton          Stahlspannungen, Betondruckspannungen, Schwingbreiten
+C54maximale Spannung in der Längsbewehrung<              = Stahl-l        Stahlspannungen, Betondruckspannungen, Schwingbreiten
+
+  ------------------------------------- SOFiLOAD / ELLA
+
+D01Perioden am FlieÃpunkt und Performance Point<                                          = Ty,Tp     Pushover Analysis - Results (ATC,EC8)
+D02spektrale Verschiebungen am Fließpunkt und Performance Point<                          = Sdy,Sdp   Pushover Analysis - Results (ATC,EC8)
+D03spektrale Beschleunigungen am Fließpunkt und Performance Point<                        = Say,Sap   Pushover Analysis - Results (ATC,EC8)
+D04Kontrollknotenverschiebung am Fließpunkt und Performance Point<                        = uy,up     Pushover Analysis - Results (ATC,EC8)
+D05Base Shear am Fließpunkt und Performance Point<                                        = Vby,Vbp   Pushover Analysis - Results (ATC,EC8)
+D06viskose Strukturdämpfung<                                                              = ξ-str     Pushover Analysis - Results (ATC)
+D07hysteretische Dämpfung in viskose Dämpfung umgerechnet<                                = ξ-0       Pushover Analysis - Results (ATC)
+D08Korrekturfaktor für die hysteretische Dämpfung<                                        = κ         Pushover Analysis - Results (ATC)
+D09effektive viskose Dämpfung<                                                            = ξ-eff     Pushover Analysis - Results (ATC)
+D0Aspektrale Reduktionsfaktoren für konstanten Beschleunigungs- und Geschwindigkeitsbereich des Spektrums<    = SRa,SRv   Pushover Analysis - Results (ATC)
+D0BDuktilitätsfaktor für Verschiebung<                                                    = μ         Pushover Analysis - Results (EC8)
+D0CReduktionsfaktoren infolge der Duktilität am Fließpunkt und Performace Point<          = Ryy,Ryp   Pushover Analysis - Results (EC8)
+
+D0DLastfall der Kapazitätskurve ; "PP": Performance Point<                                = LCC       Pushover Analysis - Statistics
+D0EKontrollknotenverschiebung<                                                            = u         Pushover Analysis - Statistics
+D0FBase Shear<                                                                            = Vb        Pushover Analysis - Statistics
+D0Gspektrale Verschiebung<                                                                = Sd        Pushover Analysis - Statistics
+D0Hspektrale Beschleunigung<                                                              = Sa        Pushover Analysis - Statistics
+D0IStructural Performance Limit<                                                          = SPL       Pushover Analysis - Statistics
+
+D11Nummer der Eigenform<                                                                  = No        Eigenwerte
+D12Eigenwert<                                                                             = λ         Eigenwerte
+D13Relativer Fehler des Eigenwerts<                                                       = error     Eigenwerte
+D14Kreiseigenfrequenz<                                                                    = ω         Eigenwerte
+D15Eigenfrequenz<                                                                         = f         Eigenwerte
+D16Eigenperiode<                                                                          = T         Eigenwerte
+D17Modale Dämpfung<                                                                       = ξ         Eigenwerte
+D18Effektive modale Masse in X-, Y- und Z-Richtung<                                       = Meff      Eigenwerte
+D19Totale effektive Masse in X-, Y- und Z-Richtung<                                       = Σ(Meff)   Eigenwerte (footnote)
+
+D1AMassenproportionaler Dämpfungsgrad<
+D1BSteifigkeits proportionaler Dämpfungsgrad<
+D1COptionen zum Ansatz der dynamischen Windbelastung<
+
+D1EEigenwert (Knicklastfaktor)<                                                           = λ         Stabilitätseigenformen
+D1FGrenzschlankheit für Knicklängen<                                                      = λmax      Stabilitätseigenformen
+
+D1PPartizipationsfaktoren in X-, Y- und Z-Richtung<                                       = part      Eigenwerte
+D1QTotale effektive Massen / Partizipationsfaktoren der aktivierten Massen in X-, Y- und Z-Richtung< = Σ(part),Σ(Meff) Eigenwerte (footnote)
+
+D2CHöhenordinate einer Schicht für die Vb ermittelt ist<                                  = H         Summe der Kräfte (Base-Shear)
+D2DBase-Shear pro Eigenform in X-, Y- und Z-Richtung<                                     = Vb        Summe der Kräfte (Base-Shear)
+D2EKippmoment pro Eigenform um X-, Y- and Z-Achse bezieht auf globalen Koordinatennullpunkt<  = Mb        Summe der Kräfte (Base-Shear)
+D2FTotale Vb und Mb ermittelt nach gegebener Überlagerungsart.<                           = SRSS      Summe der Kräfte (Base-Shear) (footnote)
+D2GÜberlagerte totale Vb und Mb ermittelt nach gegebener Überlagerungsart der Spektren.<  = SRSS      Summe der Kräfte (Base-Shear) (footnote)
+D2HVb wird für gesamtes System berechnet (“Base” des Systems).<                           = base      Summe der Kräfte (Base-Shear) (footnote)
+
+D2IModaler Last-Partizipationsfaktor als Skalarprodukt des Eigenvektors φ mit dem Lastvektor p<    = φT * p0      Modal load paticipation factors per load function
+D2JSkalarprodukt des Vektors der Quadrate der Eigenvektorkomponenten φ2 mit dem Lastvektor p<      = φ2 * p0      Modal load paticipation factors per load function
+D2KΣ(φ·p)² - Summe der Quadrate der Modalwerte (φ·p)<                                     = Σ         Modal load paticipation factors per load function (footnote)
+D2LΣ(φ2·p) - Summe der Modalwerte (φ2·p)<                                                 = Σ         Modal load paticipation factors per load function (footnote)
+
+D2MErgebnistyp<                                                                           = Type      Maximum Forces and Moments
+D2NModale Überlagerungsart<                                                               = STYP      Maximum Forces and Moments
+
+D2OTranslatorische Massen in X-, Y- and Z-Richtung<                                       = TM        Einzelmassen, Massen in Knoten, Summe der Massen
+D2PRotatorische Massen um X-, Y- and Z-Achse<                                             = RM        Einzelmassen, Massen in Knoten, Summe der Massen
+D2QWölbmasse<                                                                             = RMB       Einzelmassen, Massen in Knoten, Summe der Massen
+D2RSumme der totalen und die aktiven Massen in Konten<                                    = tot,act   Einzelmassen, Massen in Knoten, Summe der Massen (footnote)
+D2SFaktor auf Massen<                                                                     = fact      Einzelmassen, Massen in Knoten, Summe der Massen (footnote)
+D2TKoordinaten des Masseschwerpunkts<                                                     = S         Einzelmassen, Massen in Knoten, Summe der Massen (footnote)
+D2U3x3 rotarische Massenmatrix um den Masseschwerpunkt<                                   = RM(S)     Einzelmassen, Massen in Knoten, Summe der Massen (footnote)
+D2VMaximale Antwort in Modalkoordinaten pro Lastfunktion<                                 = q,max     Modalantwort
+D2WMaximale Antwort in Modalkoordinaten<                                                  = q(t),max  Modalantwort
+D2XSpektrale Pseudo- Beschleunigungsantwort normiert mit der Grundbeschleunigung<         = S(xi,T)   Modalantwort
+D2YPhase<                                                                                 = ϕ         Modalantwort
+D2ZSpitzenbeiwert<                                                                        = kp        Modalantwort
+
+DLALastart (P) = Achse/Einzellast, (B) = verteilte Last<
+DLBvertikaler Lastwert<
+DLClongitudinaler Lastwert (Bremsen)<
+DLDtransversaler Lastwert (Wind)<
+DLEeffektive Last für Zentrifugalkräfte<
+DLFLastfaktor für günstige Laststellungen<
+DLGPosition entlang des Lastenzuges<
+DLHLänge der Belastung<
+DLIExzentrizität der Last<
+DLJHöhe des transversalen Lastangriffspunkts<
+DLKHöhe des Massenschwerpunkts<
+DLLAbstand der Räder<
+DLNverbunden mit Knoten des Fahrzeugmodells<
+DLOBreite der Radaufstandsfläche<
+DLPLänge der Radaufstandsfläche<
+
+DM0Restflächenbelastung<
+DM1Geschwindigkeit des Lastenzugs<
+DM2Exzentricität des Lastenzugs<
+DM3Faktor der Einzelasten<
+DM4Faktor der Gleichlasten<
+DM5Faktor der Restflächenbelastung<
+DM6Faktor der longitudinalen Lasten<
+DM7Faktor der Querlasten<
+DM8Faktor der Zentrifugallasten<
+DM9Faktor der Windlasten<
+DMAStart des Bereichs<
+DMBEnde des Bereichs<
+DMCwahre Länge des Bereiches<
+DMDakkumulierte Gesamtlänge<
+DMEakkumulierte effektive Länge<
+DMFIntegral der Einflusslinie im Bereich<
+DMGOrdinate des Maximums im Bereich<
+DMHArt des Maximums<
+DMISchwingbeiwert<
+DMKStationswert des Referenzpunktes des Lastenzuges<
+DMLReale Ordinate des Referenzpunktes des Lastenzuges<
+DMMexplizit vorgegebener Schwingbeiwert oder effektive Länge<
+DMNAbstand bei Kolonnenfahrt<
+DMOveränderlicher Abstand im Lastenzug<
+DMPspannweitenabhängige Belastung<
+
+   ------------------------------------- MAXIMA
+
+F01Einwirkung<                                                  = Act
+F02Einteilung der Einwirkung<                                   = Part
+F03Teilsicherheitsfaktoren ungünstig/günstig/außergewöhnlich<   = γ-u,γ-f,γ-a
+F04Kombinationsbeiwerte<                                        = ψ-0,ψ-1,ψ-2,ψ-inf
+F05Faktor ungünstig/günstig<                                    = fak-u,fak-f
+F06Faktoren ungünstig/günstig 1.,2.,3. Leiteinwirkung<          = faku1,fakf1,faku2,fakf2,faku3,fakf3
+F07Lastfallnummer<                                              = LF
+F08Faktor für Lastfall<                                         = Fakt
+F09Lastfalltyp<                                                 = Typ
+F0AÜberlagerungstyp<                                            = sup
+F10ständige Last einwirkungsweise<                              = PERM                                Typ PERM
+F11ständige Last lastfallweise<                                 = PERC                                Typ PERC
+F12bedingte Last<                                               = COND                                Typ COND
+F13Wechsellast<                                                 = UNSI                                Typ UNSI
+F14Folgelastfall<                                               = F                                   Typ F
+F15ständige Alternativlast<                                     = AG                                  Typ AG no.
+F16Alternativlast<                                              = A                                   Typ A no.
+F17Alternativlast mit wechselndem Vorzeichen<                   = X                                   Typ X no.
+
+F21Summen der ständigen Einwirkungen ungünstig und günstig wirkend, * = maßgebend<                  = SumGU,SumGF
+F22Summe der veränderlichen Einwirkungen erste, zweite, dritte Leiteinwirkung, * = maßgebend<       = SumQ1,SumQ2,SumQ3
+F23Summe der veränderlichen Einwirkungen Begleiteinwirkungen, * = maßgebend<                        = SumQI
+F24Faktoren der ständigen Lastfälle ungünstig und günstig wirkend<                = FakGU,FakGF
+F25Faktor der veränderlichen Lastfälle erste, zweite, dritte Leiteinwirkung<      = FakQ1,FakQ2,FakQ3
+F26Faktor der veränderlichen Lastfälle Begleiteinwirkungen<                       = FakQI
+F27resultierende Faktoren, - = Lastfall wird nicht berücksichtigt<             = Fakt
+F28lastfallweise Berücksichtigung<             = LFW
+
+  ------------------------------------- CSM
+
+H01Bauabschnittsnummer<                = BA                              Bauabschnitte
+H02Typ der Einwirkung<                 = Typ                             Bauabschnitte
+H03Zeitdauer des Kriechabschnitts<     = t                               Bauabschnitte
+H05Taktschiebeweg dieses Bauzustands für Einschieben von Seite 1<  = Takt_1,Takt_2    Bauabschnitte
+H06Taktschiebeweg dieses Bauzustands für Einschieben von Seite 2<  = Takt_1,Takt_2    Bauabschnitte
+
+H10Gruppennummer<                      = GRP  / Grp
+H11aktiv von / bis Bauabschnittsnummer< = aktiv von, bis BA              Gruppeneigenschaften
+H12Bauabschnittsnummer ab der das Eigengewicht wirken soll<  = Gewicht ab BA  Gruppeneigenschaften
+H13Bauabschnittsnummer bei dem die Stabgelenke fixiert werden <  = Gfix  Gruppeneigenschaften
+H14Bauabschnittsnummer ab dem die QUAD-Bettung aktiert wird<  = BETT     Gruppeneigenschaften
+H15Bauabschnittsnummer ab welchem das Ortbetongewicht eines AQUA-BA Teilquerschnittes aktiviert wird<  = ORTG     Gruppeneigenschaften
+H16Steifigkeit wirksam bis Bauabschnittsnummer<  = WSTI                  Gruppeneigenschaften
+H17wirksames Alter bei Erstbelastung<  = t0                              Gruppeneigenschaften
+H18Beginn des Schwindens (Schwinden ohne Effekt von t0-ts) <  = ts       Gruppeneigenschaften
+H19Steifigkeitsfaktor beim ersten Einbau (z.B. Seilvorspannung)< = FAK1  Gruppeneigenschaften
+H20Faktor für Kriechen von Federn und Bettungen<   = PHIF                Gruppeneigenschaften
+H21Normalkraft-Steifigkeitsanteil QUAD-Elemente<   = QUEA                Gruppeneigenschaften
+H22Faktor des E-Moduls von QUAD-Elementen in lokaler x-Richtung< = QEMX  Gruppeneigenschaften
+
+H31Spannstrangnummer<                  = Strang NRS                      Verwendete Spannstränge
+H32Spannabschnittsnummer Einbau<       = Einbau IBA1                     Verwendete Spannstränge
+H33Spannabschnittsnummer Verpressen<   = Verpressen IBA2                 Verwendete Spannstränge
+H34Spannabschnittsnummer Ausbau<       = Entfernen IBA3                  Verwendete Spannstränge
+H35aktiv ab Bauabschnittsnummer<       = aktiv ab BA                     Verwendete Spannstränge
+
+H41wirksame Bauteildicke (2A/U)<       = h-0                             Kriechbeiwerte / Schwindbeiwerte
+H42Kriechzahl gesamt<                  = PHI-Gesamt                      Zu skalierende Kriech- und Schwindbeiwerte, Zusatzeingaben
+H43Schwindmaß gesamt<                  = EPS-Gesamt                      Zu skalierende Kriech- und Schwindbeiwerte, Zusatzeingaben
+H44effektive Dicke der QUAD-Elemente<  = d-eff-QUAD                      Zu skalierende Kriech- und Schwindbeiwerte, Zusatzeingaben
+H45Kriechanteil des Bauabschnitts  Δϕ-eff<           = Δϕ-eff            Kriechbeiwerte / Schwindbeiwerte
+H46Schwindanteil des Bauabschnitts Δε-cs<            = Δε-cs             Kriechbeiwerte / Schwindbeiwerte
+H47Summe Kriechanteile der Bauphasen<                = ϕ-eff             Kriechbeiwerte / Schwindbeiwerte
+H48Summe Schwindanteile der Bauphasen<               = ε-cs              Kriechbeiwerte / Schwindbeiwerte
+H49effektive Dauer Kriechabschnitt<                  = t                 Kriechbeiwerte / Schwindbeiwerte
+H50Kriechwert für einen später (bei t0) beginnenden Lastanteil (Rückkriechen)< = RKRI   Kriechbeiwerte / Schwindbeiwerte
+
+999SOFISTIK_LEG
+
+000 LEGEND TEXT FOR ALL SOFISTIK PROGRAMS                    LANGUE = 1
+000 Numbers 001 - 9ZZ = general names + SOFIMESH
+000 Numbers A01 - AZZ = aqua     specific
+000 Numbers B01 - BZZ = aqb      specific
+000 Numbers C01 - CZZ = bemess   specific
+000 Numbers D01 - DZZ = sofiload,ella specific
+000 Numbers E01 - EZZ = dyna     specific
+000 Numbers F01 - FZZ = maxima   specific
+000 Numbers G01 - GZZ = tendon   specific
+000 Numbers H01 - HZZ = csm,hydra... specific
+000 -------------------------------------------------------------------------
+001load case<                         = LC   / LF
+002design case<                       = DC   / BF
+003construction stage<                = CS   / BA
+004primary load case<                 = PLC  / PLF
+005resulting load case<               = RLC  / ELF
+
+010material number<                   = MAT
+011reinforcement material number<     = MRf  / MBw
+012transverse reinforcements material number< = MRfL / MBwL
+013embedding reference material<      = MRef / MRef
+018bedding profile<                   = NoP  / NrP
+019section number<                    = NoS  / NrQ
+01Llayer of reinforcement<            = LAY  / Rng
+
+020element number<                    = NO   / Nr
+021primary group number<              = GRP  / Grp
+022secondary group number<            = SGRP / SGrp
+02Abeam section<                      = BSCT / ABSC
+02Bbeam element<                      = BEAM / STAB
+02Ccable element<                     = CABL / SEIL
+02Ddamper element<                    = DAMP / DAMP
+02Eboundary element<                  = BOUN / RAND
+02Fflexibility element<               = FLEX
+02Gresult set<                        = RSET
+02Kkinematic constraint<              = KINE
+02Mmass element<                      = MASS
+02Nnode<                              = NODE / KNOT
+02Ppile element<                      = PILE / PFAH
+02Qquad element<                      = QUAD
+02Rexternal beam section<             = SECT
+02Sspring element<                    = SPRI / FEDE
+02Ttruss element<                     = TRUS / FACH
+02Upipe element<                      = PIPE / ROHR
+02Vbric element<                      = BRIC
+02Xnode of quad element<              = QUAK
+02Ynode of bric element<              = BRIK
+
+030Factor on stiffness<
+
+100longitudinal force<                = N
+101normal force<                      = N
+102transverse force<                  = Ty,Tz
+103shear force<                       = Vy,Vz
+104bending moment<                    = My,Mz,mx,my
+105torsional moment<                  = Mt,mxy
+106primary torsional moment<          = Mtp
+107secondary torsional moment<        = Mts,Mt2
+108warping moment<                    = Mb
+109explicit moments from imperfection<= eMy,eMz
+10Aprestress normal force<            = N,p
+10Bprestress transverse shear<        = Vy,p
+10Cprestress bending moment<          = My,p
+10Dprestress torsional moment<        = Mt,p
+10Ebedding pressure<                  = ps
+
+10Tdistortion<                        = u-w
+10Udisplacement<                      = u-x,u-y,u-z
+10Vtranslatoric velocity<             = v-x,v-y,v-z
+10Wtranslatoric acceleartion<         = a-x,a-y,a-z
+10Xrotation<                          = phi-x,phi-y,phi-z
+10Yangular velocity<                  = ome-x,ome-y,ome-z
+10Zanfular acceleration<              = alf-x,alf-y,alf-z
+
+110longitudinal stiffness<            = EA
+111bending stiffness<                 = EIy,EIz
+112transverse shear stiffness<        = GAy,GAz
+113torsional stiffness<               = GIt
+114warping stiffness<                 = ECM
+115longitudinal mass<                 = m
+116rotational mass<                   = theta
+11Ttemperature<                       = T
+11Unormal stress<                     = sig
+11Vshear stress<                      = tau
+
+120angle of attack<                   = alf
+121drag coefficient<                  = cd,cy
+122lift coefficient<                  = cl,cz
+123hydrodynamic coefficient<          = cm
+124moment coefficient<                = cm
+125lateral coefficient<               = c-lat
+126Strouhal number<                   = Sr
+127galloping coefficient<             = ag
+128reference for force coefficients<  = Sr
+
+  ------------------------------------- SOFiMESH
+    SOFiMSHA begin 301
+
+301elastic bedding perpendicular/tangential to element<       = C,CT      Plane Elements
+311number of bedding profile<          =NoP                               Beam Elements
+312reference axis with stationing<     =Reference                         Beam Elements
+313"0": beam axis refers to origin of the cross section, "S": to center of gravity< =e Beam Elements
+314buckling length coefficient<        =beta-y,beta-z                     Beam Elements - Extended Properties
+321number of elements within group<    =number                            Groups
+322element type<                       =Type                              Groups
+323minimum/maximum element number<     =Min-No,Max-No                     Groups
+324title of the secondary group<       =Grp                               Groups -> besser: Sekondary Groups
+325construction stage number of group activation/deactivation< =CS-Start,Cs-End Groups
+331start/end node<                     =From,To                           Supporting Lines
+332increment<                          =Inc                               Supporting Lines
+333type of support<                    =Type                              Supporting Lines
+334direction of increase ("S": along the line)< =Ref                      Supporting Lines
+335bedding constant at the beginning/end< =CA,CE                          Supporting Lines
+336unit of bedding<                    =DIM                               Supporting Lines
+341component of the direction<         =dX,dY,dZ                          Spring Elements
+342axial / lateral spring stiffness<   =CP,CT                             Spring Elements
+343torsional spring stiffness<         =CM                                Spring Elements
+344exponent of the non-linear damping< =e-P,e-T,e-M                       Spring Elements
+345axial / lateral / torsional damping<=DP,DT,DM                          Spring Elements
+346number of work law / material (*)<  =MNo                               Spring Elements  - nonlinear Properties
+347reference area<                     =A/I-ref                           Spring Elements  - nonlinear Properties
+348prestressing<                       =Prestr.                           Spring Elements  - nonlinear Properties
+349friction coefficient<               =tan-r                             Spring Elements  - nonlinear Properties
+350dilatation value<                   =tan-d                             Spring Elements  - nonlinear Properties
+361element length<                     =L                                 Truss Elements / Cable Elements
+371translatoric mass<                  =M-X,M-Y,M-Z                       Nodal Masses
+372rotational mass<                    =M-Xx,M-YY,M-ZZ                    Nodal Masses
+381DoF = Fac1 * DoF1@node1 + Fac2 * DoF2@node2 + ...< =equation           Kinematic Constraints
+382coupling condition<                 =Type                              Kinematic Constraints
+383distance of the nodes<              =deltaX,deltaY,deltaZ              Kinematic Constraints
+384factor for intermediate nodes<      =df                                Kinematic Constraints
+385direction of the kinematic constraint<  =dX,dY,dZ                      Kinematic Constraints
+386dependent degree of freedom<        =DoF                               Kinematic Constraints
+390Period if frequency dependent<      =T                                 Impedanz
+391values of the flexibility matrix<   =F-xx,F-yy,F-zz,FR-xx...           Flexible Supported Nodes
+392values of the stiffness matrix<     =S-xx,S-yy,S-zz,SR-xx...           explicit Stiffness
+393values of the damping matrix<       =D-xx,D-yy,D-zz,DR-xx...           explicit added Damping
+394values of the mass matrix<          =M-xx,M-yy,M-zz,MR-xx...           explicit added Mass
+
+    SOFiMSHC begin 501
+501support conditions<                 =Support Conditions                Structural Points, kann in Engl. entfallen
+502direction of the local coordinate system<    =X,Y,Z[-]                 Structural Points
+503width of support / mesh in local direction< =hx,hy                     Structural Points
+504plate thickness<                    =t                                 Structural Points
+511local dimensions<                   =dx,dy                             Structural Points - Column Head Properties
+512area of column head<                =A                                 Structural Points - Column Head Properties
+513thickness of column head<           =t                                 Structural Points - Column Head Properties
+521structural point start / end<       =SPt-a,SPt-e                       Structural Lines
+522reference line, reference axis<     =Ref                               Structural Lines
+523element type<                       =Typ                               Structural Lines
+531type of support / coupling conditions< =Properties                     Structural Lines - Support Conditions and Elastic bedding
+532axial / lateral bedding<            =Ca,Ct                             Structural Lines - Support Conditions and Elastic bedding
+533torsional bedding<                  =Cm                                Structural Lines - Support Conditions and Elastic bedding
+534width of support<                   =w                                 Structural Lines - Support Conditions and Elastic bedding
+535explicit components of the direction< =dX,dY,dZ                        Structural Lines - Support Conditions and Elastic bedding
+536additional rotation about beam axis<  =dRot                            Structural Lines - Support Conditions and Elastic bedding
+540action of the surface<              =Typ                               Structural Volumes - Geometric Data
+541number of the surface<              =Surf                              Structural Volumes - Geometric Data
+551direction of the local x axis<      =locX                              Structural Area
+552orthotropic thickness<              =tx,ty,tz                          Structural Area - Orthotropic thickness, Support Conditions and Elastic bedding
+553Type of the structural line<        =Typ                               Structural Area - Extended Properties
+554number of the structural line<      =Linie                             Structural Area - Extended Properties
+555thickness of the area at the structural line<  =t                      Structural Area - Extended Properties
+556distance (offset) of region to edge< =Dist                             Structural Area - Extended Properties
+
+   Design elements - Plan view of the axis
+601number of the tangential intersection point<  =Title                   Tangential intersection points
+602station value<                      =S                                 Tangential intersection points
+603coordinates of the tangential intersection point<  =X,Y                Tangential intersection points
+604radius in mid of transition<        =R                                 Tangential intersection points
+605length of the first transition element<   = La                         Tangential intersection points
+606length of the second transition element<  = Le                         Tangential intersection points
+607deflection angle<                   = Tau                              Tangential intersection points
+608coordinates of start point<         =X,Y                               Segments
+609length of the segment<              =L                                 Segments
+610radius at start / end point<        =Ra,Re                             Segments
+611clothoidal parameter R*L=A²<        =A                                 Segments
+612Normal direction<                   =Nx,Ny,Nz                          Segments
+613station value at start point<       =S                                 Segments
+614height at start point<              =H                                 Segments
+
+   Elevation - Height of the axis
+621height of the gradient polygon<     =H                                 Tangential intersection points
+622radius of curvature<                =R                                 Tangential intersection points
+623inclination<                        =i                                 Segments
+
+   Variables
+631value for the station<              =S                                 Variables
+632value for the variable<             =V                                 Variables
+633value for the derivate of the variable<  =DV                           Variables
+634properties of the data point<       =Typ                               Variables
+
+   Placements
+641type of the placement<              =Typ                               Placements
+642selection of the secondary axis<    =IDS                               Placements
+643number of the structural point generated at placement< =NPT            Placements
+644group number of beams in the following section<  =GRP                  Placements
+645cross section number of beams in the following section< =NOS           Placements
+646rotation about the global Z direction< =ALF                            Placements
+647rotation about the local z-axis<       =ALFZ                           Placements
+648cross fall to the left / right<     =INCR,INCL                         Placements
+649coordinats of the placement<        =X,Y,Z                             Placements
+650difference in Z/difference of the length<  =dZ/dL                      Placements
+
+   Geometric axis
+661coordinate of the control point<    =X,Y,Z                             Control Points
+662weight<                             =w                                 Control Points
+
+
+  ------------------------------------- AQUA / AQB
+
+A01sectional area<                    = A
+A02transverse shear deformation area< = Ay,Az,Ayz
+A03transverse shear resistance area<  = Av
+A04torsional moment of inertia<       = It
+A05bending moment of inertia<         = Iy,Iz,Iyz
+A06polar moement of inertia<          = Ip
+A07section modulus<                   = Z / S
+A08bending resistance<                = W
+A09ordinate of plastic centre<        = yp,zp
+A0Asectional coordinate<              = y,z
+A0Bordinate of elastic centroid<      = yc,zc
+A0Cordinate of shear centre<          = ysc,zsc
+A0Dextreme coordinates relative to centroid< = ymin,ymax,zmin,zmax
+A0Eminimum value for internal lever<  = hymin,hzmin
+A0Ftorsional resistance<              = 1/Wt,1/Wt2
+A0Gshear force resistance<            = 1/WVy,1/WVz
+A0Hunit warping<                      = w,wmin,wmax
+A0Iwarping sectional value<           = ASwyy,ASwzz
+A0Jsectional distance<                = ry,rz
+A0Ktorsional equivalent area (Bredt)< = Ak
+A0Lgross concrete area<               = Ab
+A0Mwarping resistance<                = Cm
+A0Nwarping shear resistance<          = Cms
+A0Obuckling curve (LTB, y-y, z-z)<    = bcy
+A0Peffective depth<                   = d-eff
+A0Qordinate of the mass centre<       = yg,zg
+A0Rtorsional effective length<        = L-Tors
+A0Seffective area<                    = A-eff
+A0Tdistribution of reinforcements, E: single, T: total<    = DIST
+A0Uperipheral area per length<        = U
+A0Vmean value of torsional resistance< = 1/WTm
+A0Wnon effective flags (N=normal force, Y=y-ordinate/bending Mz, Z=z-ordinate/bending My)<  = eff
+A0Xproperty set / air contact ratio< = exp
+A0Yreference area<                    = Aref
+A0Zshear distribution factor<         = fVy,fVz
+
+A10thickness<                         = t
+A11height<                            = h
+A12width<                             = b
+A13diameter<                          = d
+A14depth<                             = d
+A15upper height of section<           = h
+A16upper width of section<            = b
+A17lower height of section<           = h
+A18lower width of section<            = b
+A19lever of internal forces<          = z
+A1Aradius<                            = R
+A1Beffective width<                   = B-eff
+A1Cweb thickness<                     = s
+A1Dflange thickness<                  = t
+A1Efillet radius<                     = r1,r2
+A1Fdistance of buckling from end points<      = Fix
+A1Grelative location of face<         = xS
+A1HReference point for moments<       = ycm,zcm
+A1Ineutral point for bending stress<  = ysb,zsb
+A1JValue for design is depending on combination type<  Footnote to Material safety
+A1KEquivalent roughness (EN 1991-1-4, table 7.13)<
+A1LAdditional height of attack area due to traffic<
+A1MIce cover or marine growth<
+A1NReference point for Normal force<  = ysn,zsn
+A1Oprincipal moments of inertia and angle of the principal axes<
+A1PType of shear connection<
+A1QInclination of beam axis to reference axis<
+A1REffective inclination of bending struts for transverse shear<
+A20reinforcement area<                = As,Aso,Asu
+A21bar diameter<                      = D,Do,Du,Ds
+A22cover of reinforcements<           = c
+A23static distance<                   = h
+A24distance of bars<                  = a
+A25radius of reinforcement<           = R
+A26area of transverse reinforcements< = Asv
+A27inclination of transverse reinforcements< = phib
+A28prestress<                         = sig-0
+A29influence area for crack design<   = a
+A2Aperpendicular stress<              = sig-t
+A2Btotal width<                       = b
+A2Cjoint parameters<                  = c,mue
+A2Dminimum distance of bars<          = a-min
+A2Emaximum distance of bars<          = a-max
+A2Fminimum reinforcement area<        = As-min
+A2Gmaximum reinforcement area<        = As-max
+A2Mperpendicular moment in cut<       = M-t
+A2Nperpendicular force in cut<        = N-t
+A2Reffective reinforcement ratio<     = rho
+A2Smean crack strain<                 = eps-sr
+A2Tmean crack distance<               = sr-m
+A2Vpartial factor minimise bending stresses (EN 1993-1-11, table 6.2)< = gamma-R
+A2Wweight<                            = W
+A2Xcable factors according DIN 3051<
+A2Ycable factors according EN 12385-4<
+A2Zrupture force<                     = Z (for cables)
+
+A30coordinates of the start point<    = Y,Y,Z BORE
+A31direction of the bore profile<     = dX,dY,dZ
+A32rotation angle of the local axes<  = a
+A33ordinate of the profile axis<      = s
+A34parameter of the foundation profile< = K0-a,K1-a,K2-a,K3-a,K0-t,K1-t,K2-t,K3-t
+A35skin friction<                     = M0
+A36maximum skin friction<             = C0
+A37tangent of the pile friction angle< = tanR
+A38tangent of the pile dilatancy angle< = tanD
+A39lateral pressure coefficient<      = KSIG
+A3Amaximum pile foot force<           = Pmax
+A3Bform factor as variation along periphery< = P0,P1,P2,P3
+A3Cmaximum foundation value<          = Pmax
+A3Dincrement of the compression modulus< = dEs
+A3Etype of the variation of the compression modulus< = VARI
+A3Fmaximum pressure at pile foot<        = Pmax
+A3Gmaximum lateral pressure<             = Pmal
+A3Hlowest ground water level<            = Hgwl
+A3Ihighest ground water level<           = Hgwh
+A3Jsoil pressure<                        = sigRd
+A3Kembedment depth\foundation width<     = d\b'
+A3Lfactor on soil pressure<              = f
+A3Mspecific weight<                      = gam
+A3Nspecific weight under buoyancy<       = gama
+
+A40Fibre direction, angle difference to local x axis of element<  = BETA FLAY
+A41Relative thickness<                                            = T FLAY
+
+ACCStrand wire rope with CF<             = cable materials
+ACFFully locked coil rope<
+ACNSpiral strand rope, stainless<
+ACOSpiral strand rope<
+ACPBundle of parallel wires<
+ACRStrand wire rope with CWR<
+ACSBundle of parallel strands<
+ACWStrand wire rope with CWR, stainless<
+
+AM0Safety factor for sectional design and nonlinear analysis with charactersitic material values<
+AM1Safety factor for stability design and nonlinear analysis with design material values<
+AM2Safety factor for rupture and nonlinear analysis with calculatoric material values<
+AM3Safety factor for the evaluation of the sectional reference design capacity<
+
+AMMMaterial safety γ-M<
+AMSStructural steel<
+AMTConcrete<
+AMUReinforcement steel<
+AMVTimber<
+AMWGeneral material<
+AMXMaterial<
+AMYAluminium<
+AMZPrestressing steel<
+
+AS0No valid reinforcements are defined<
+AS1Reinforcements are not considered in the sectional values<
+AS2Reinforcements are not considered for the self weight<
+
+   ------------------------------------- AQB
+    AQB
+
+B00action type, group and superposition category<
+B01reference point for forces and moments<
+B02section the load case is acting on<
+B03section number for external beam sections<
+B04construction stage<
+B05reduction factor for tendon areas<
+B06system/buckling length coefficient for z-direction resp. strong axis<
+B07system/buckling length coefficient for y-direction resp. weak axis<
+B08element type<
+B09range of element numbers<
+B0Afactor for stress range of reinforcing steel<
+B0Bfactor for stress range of tendon steel<
+B0Cfactor for stress range of transverse reinforcements<
+B0Dfactor for stress range of concrete<
+B0Etotal inclination to correct shear forces<
+B0Fdistance of face to smooth out moments<
+B0Gsection modulus for normal stress<
+B0Htendon force<
+B0Itendon area<
+B0Jstress of tendon<
+B0Kcomponents of prestress in local directions<
+B0Llength of structural line<
+B0Mfactor for stress range of other materials<
+B0Xx-ordinate of beam section<
+B0Yx-ordinate of beam section or station on axis<
+B10tensile force (EN 1993-1-1, 6.2.3, Eq.6.5)<
+B11compressive force (EN 1993-1-1, 6.2.3, Eq.6.9)<
+B12bending (EN 1993-1-1, 6.2.5, Eq.6.12)<
+B13shear force (EN 1993-1-1, 6.2.6, Eq.6.17)<
+B14torsion (p)rimary and (s)econdary (EN 1993-1-1, 6.2.3, Eq.6.23)<
+B15reduction factor (EN 1993-1-1, 6.2.8, Eq.6.45)<
+B16bending, shear force (EN 1993-1-1, 6.2.8, Eq.6.30)<
+B17bending, shear and axial force M/Mred*(1-0.5a)+N/Npl (EN 1993-1-1, 6.2.9, Eq. 6.32/6.36-6.38)<
+B18biaxial bending, shear and axial force MyVz+MzVy+N (EN 1993-1-1, 6.2.9-10, Eq. 6.41 linearised)<
+B19form factor Wpl/Wel (EN 1999-1-1, 6.2.5.1 (2))<
+B1Astress at end points<
+B1Bexisting c/t or D/t-ratio (section class)<
+B1Climit of c/t-ratio (base value * stress factor)<
+B1Dthickness of sectional element<
+B1Ecross-section class<
+B1Fc/t-ratio (SCL)<
+B1Gvon Mises stress = square root of yield criterion including all effects (EN 1993-1-1, 6.2.1 (5), Eq.6.1)<
+B1Hlinear summation of all effects including torsion + warping (EN 1993-1-1, 6.2.1 (7), Eq.6.2)<
+B1Itotal interaction of all effects including torsion + warping (EN 1993-1-1, 6.2.8-10, Eq.6.41+6.23)<
+B1Jflexural buckling without torsional buckling (EN 1993-1-1, 6.3.1.1)<
+B1Kbuckling factor<             = ksig
+B1Llength or diameter of tube<  = D/c
+B1Mclassification index (e.g. 1.5 => c/t is in the mid between SCL 1 and 2)<
+B1Nstress dependant utilisation level (see AQB Manual 2.3.2)<
+B1QClassification is decided by another part with a lower utilisation level.<
+B1Sstress in reinforcements<    = sig,s
+B1Tstress in tendons<           = sig,t
+B1XExponents for the biaxial interaction according EN1993-1-1 equation 6.41<
+B1Ystress distributionn ratio<  = psi
+B1ZTensional stress partition<  = alf
+
+B20total longitudinal reinforcement<
+B21geometric part of reinforcements<
+B22longitudinal reinforcement per layer<
+B23nominal longitudinal reinforcement per circumference of equivalent section due to torsion (Mt/2Ak)<
+B24total transverse reinforcement per layer and cutted element<
+B25contained required area of transverse reinforcements for torsion in the relevant total shear cut value<
+B26shift rule of longitudinal reinforcement (0.0 if already included by normal force)<
+B27strain at outmost effective fibers<
+B28safety factor concrete<
+B29safety factor reinforcements<
+B2Aglobal safety factor for concrete in bending<
+B2Bglobal safety factor for concrete in compression<
+B2Cglobal safety factor for concrete in shear<
+B2Dglobal safety factor for passive reinforcements<
+B2Eglobal safety factor for active reinforcements<
+B2Fglobal safety factor for structural steel<
+B2Hstrain limit for compression of concrete<
+B2Istrain limit for centric compression of concrete<
+B2Jstrain limit for a selected x/d ratio triggering symmetric reinforcements<
+B2Kstrain limit for tension respective hardening of reinforcements<
+B2Ltotal strain limit for tendons<
+B2Mincremental strain limit for tendons<
+B2Ndistance of resulting compressive and tensile force to centroid<
+B2Oallowable value of the internal lever for the shear design (influence of location of compressive reinforcement)<
+B2Pbalanced Force (total normal force for strain distribution S1-C1)<
+B2Qpartial longitudinal force in the separated part of the section<
+B2Rrelative bearing capacity<
+B2Sutilisation<
+B2Tchange of transverse shear due to tendon stress increase<
+B2Uratio of separated compressive force D and tensile force Z and ratio of maximum shear flow T<
+B2Vlongitudinal force created from the truss model for shear and torsion<
+B2WTorsional longitudinal reinforcement will be now added to bending requirements or balanced with compressive forces<
+B2XValue is obtained from maximum height of compression zone based on the redistribution grade δ (EN 1992-1-1, 5.5)<
+B2YTorsional longitudinal reinforcement for 45° inclination, the layers will be checked and adjusted after the shear design<
+B2ZTorsional longitudinal reinforcement for 45° inclination, the equivalent normal force has been alread accounted for in the analysis.<
+
+B30capacity forces<
+B31height of compressive zone<
+B32strain in centroid<
+B33factor on shear strain or stresses<
+B34stress in section<
+B35stress in reinforcements<
+B36stress in tendons<
+B37intersection of neutral axis and local coordinate sytem<
+B38curvatures<
+B39strains<
+B3Areduction of stiffness<
+B3Beffective elasticity modulus referring to gross section<
+B3Ceffective shear modulus referring to gross section<
+B3Deffective diameter of reinforcements<
+B3Emean crack strain<
+B3Fstrains at bounds of effective zone<
+B3Gstrains at middle of articulated members<
+B3Hheight of effective zone<
+B3Ibond stress<
+B3Jreduction of tendon stress due to bond effects<
+B3Minternal forces (integrals of nonlinear stresses)<
+B3Rsteel stress at initial crack<
+B3Seffective steel stress<
+B3Ttabulated stress limit<
+B3Udistance of reinforcment bars<
+B3Vdistance of cracks<
+B3Wwidth of cracks<
+B3Zreinforcement of effective tensile zone<
+
+B41relative humidity<                    = RH
+B42temperature in creep interval<        = TEMP
+B43load case with nonlinear temperature< = LCT
+B44real duration of creep interval<        DT
+B45real time at end of creep interval<     T
+B46effective age at begin of interval<     T0
+B47effective age at end of interval<       TW
+B48start time of drying<                   TS
+B49relaxation coefficients<                RHO
+                                                notional = rechnerisch includes the high stress effects
+                                                MC 1990 uses notional for final values of creep and shrinkage
+B4Afinal creep coefficient<                     phi
+B4Bbasic creep coefficient<                     phi-0  (EN Eq. B.2)     phi-b0  (EN 1992-2, Eq. B.119)
+                                                phi-bc (MC10 Eq.5.1-65) basic creep coefficient
+B4Cdrying creep coefficient<                    phi-dc (MC10 Eq.5.1-67) phi-dc  (EN 1992-2, Eq. B.121)
+B4Drelief/delayed elasticity<                   phi-v
+B4Eshrinkage coefficient<                       eps
+B4Ffinal autogenous shrinkage<                  eps-ca (EN Eq. 3.12)    eps-cbs (MC10 Eq.5.1-78) basic shrinkage
+B4Gfinal drying shrinkage<                      eps-cd (EN Eq. 3.9+B.11+B.12)
+                                                                        eps-ds  (MC10 Eq.5.1-80/82/83)
+B4Itime coefficient for creep<                  bet-f
+B4Jtime coefficient for basic creep<            bet-bc (MC10 Eq.5.1-64) phi-b0  (EN 1992-2, Eq. B.118+B.120)
+B4Ktime coefficient for drying creep<           bet-dc (MC10 Eq.5.1-71) phi-dc  (EN 1992-2, Eq. B.121)
+B4Ltime coefficient for delayed elasticity<     bet-v
+B4Mtime coefficient for autogenous shrinkage<   bet-as (EN Eq. 3.13)    beta-ca  (EN 1992-2, Eq. B.115)
+                                                                        beta-bs  (MC10 Eq.5.1-79) basic shrinkage
+B4Ntime coefficient for drying shrinkage<       bet-ds (EN Eq. 3.10)    beta-cd  (EN 1992-2, Eq. B.116)
+                                                                        beta-ds  (MC10 Eq.5.1-82) drying shrinkage
+B4Otime coefficient for shrinkage<              bet-c
+B4Pforces from tendon losses and reinforcement stresses<
+B4Qforces on gross section defining creep stress<
+B4Rforces on gross section defining resulting stress<
+B4Sstresses in material<
+B4Tloss of prestress<
+B4Ustrains in total section<
+B4Vconversion ratio of tangential modulus to system elasticity modulus<
+B4Wnotional size (2A/U)<
+B4Xcreep coefficient<                           Delta-eps
+B4Yshrinkage strain<                            Delta-phi
+
+B50design strength of concrete<
+B51design tensile strength of concrete<
+B52design strength of transverse reinforcements<
+B53maximum allowable transverse shear<
+B54maximum allowable torsional shear<
+B55maximum allowable combined mean shear<
+B56maximum allowable shear stress<
+B57maximum allowable compressive stress<
+B58maximum allowable compressive stress for transverse shear<
+B59maximum allowable compressive stress for torsional  shear<
+B5Adesign value of the shear capacity of the concrete<     ! tau-rd / vc
+B5Bshear threshold to require a design for full shear<     ! tau-02
+B5Cshear threshold to require a design for reinforcements< ! tau-01
+B5Dshear threshold to require transverse reinforcements<   ! tau-011
+B5Eshear threshold to require torsional reinforcements<    ! tau-01t
+B5Fcoefficients of shear capacity<
+B5Gratio of longitudinal tensile reinforcements<
+B5Heffective height of section<
+B5KMean longitudinal stress N/A for web, resp. true stress for midpoint of flanges<
+B5Llongitudinal strain<
+B5Mratio of cracking moment to ultimate moment<
+B5Nreinforcement of transverse reinforcements in partial cut (total values have to be added within the same web/flange)<
+B5Pinclination of compressive struts<
+B5Qstate of section (I = compressive, A = uncracked, B = cracked, E = reduced elastic stress)<
+B5Rinclination of transverse reinforcements<
+B5Sdesignation of shear cut<
+B5Tshear flow across the cut<
+B5Ushear caused by transverse forces<
+B5Vshear caused by torsional moments<
+B5Wwidth of cut<
+B5Xreduction due to sectional dimensions<
+B5Ycoefficient for plate or circular sections<
+B5Zlever of forces or +dF/-dF for difference of normal forces or nn%E for reduced elastic stress<
+
+   ------------------------------------- BEMESS
+    BEMESS
+    BEMESS
+
+C01nominal strength of the concrete<  = fck                             Material
+C02strength of the concrete<          = fc                              Material
+C03tensile strength of the concrete<  = fctm                            Material
+C04yield stress reinforcing steel<    = fy                          Material
+C05tensile stress reinforcing steel<  = ft                        Material
+C06ratio Young's modules steel/concrete< = N                     Material
+C07minimum transverse reinforcement<  = minT                            Material
+C08character of the loading<          = Type                            Material
+C09material safety SC1/SC2 = bending/compression< = SC1,SC2            Material-safety-factors
+C10material safety steel bending/compression< = SS1,SS2                 Material-safety-factors
+
+C21upper / lower distance center of bar to surface< = d1-o,d1-u,d2-o,d2-u   Reinforcement parameter two layer reinforcement
+C22upper / lower bar diameter<          = ds-o, ds-u                  Reinforcement parameter two layer reinforcement
+C23upper / lower required crack width<  = wk-o, wk-u                  Reinforcement parameter two layer reinforcement
+C24upper / lower maximum steel stress in SLS check< = sigso, sigsu    Reinforcement parameter two layer reinforcement
+C25upper / lower minimum reinforcement< = aso, asu                    Reinforcement parameter two layer reinforcement
+
+C31I=inner column, E=edge column, C=corner column, F=foundation, W=end of wall, L=wall corner, G=end_of_girder<               Summary Punching Design
+C37design shear force (reduced by bedding pressure)<           = V-Ed   Summary Punching Design
+C38dimension of column or wall thickness at end of walls<      = column Summary Punching Design
+C39effective length of 1. perimeter, reduced due to openings and edges< = ucrit   Summary Punching Design
+C40ucrit = ... % of a full circle (ucrit/u0-tot)<              = %u0    Summary Punching Design
+C41excentricity factor<                                        = beta   Summary Punching Design
+C42shear stress at reduced critical 1. perimeter<              = v-max  Summary Punching Design
+C43shear reinforcemend - total sum of all nperi perimeters<    = Asssum  Summary Punching Design
+C44min. required tension reinforcement in the punching zone<   = asl     Summary Punching Design
+C45up to this perimeter, shear reinforcement is required<      = nperi   Summary Punching Design
+
+C51longitudinal reinforcement<                          = Schwingbreite  Steel stress, concrete pressure, stress range
+C52stress range in shear reinforcements<                = links          Steel stress, concrete pressure, stress range
+C53maximum concrete compression stress<                 = concre         Steel stress, concrete pressure, stress range
+C54maximum stress in longitudinal reinforcement<        = steel-l        Steel stress, concrete pressure, stress range
+
+  ------------------------------------- SOFiLOAD / ELLA / DYNA
+
+D01periods associated with yielding and performace point<                                 = Ty,Tp     Pushover Analysis - Results (ATC,EC8)
+D02spectral displacements at yielding and performance point<                              = Sdy,Sdp   Pushover Analysis - Results (ATC,EC8)
+D03pseudo spectral accelerations at yielding and performance point<                       = Say,Sap   Pushover Analysis - Results (ATC,EC8)
+D04control node displacements at yielding and performance point<                          = uy,up     Pushover Analysis - Results (ATC,EC8)
+D05base shears at yielding and performance point<                                         = Vby,Vbp   Pushover Analysis - Results (ATC,EC8)
+D06viscous damping inherent in the structure<                                             = ξ-str     Pushover Analysis - Results (ATC)
+D07histeretic damping represented as equivalent viscous damping<                          = ξ-0       Pushover Analysis - Results (ATC)
+D08damping modification factor<                                                           = κ         Pushover Analysis - Results (ATC)
+D09effective viscous damping<                                                             = ξ-eff     Pushover Analysis - Results (ATC)
+D0Aspectral reduction factors in constant acceleration and velocity range of spectrum<    = SRa,SRv   Pushover Analysis - Results (ATC)
+D0Bdisplacement ductility factor<                                                         = μ         Pushover Analysis - Results (EC8)
+D0Creduction factors due to ductility at yielding and performace point<                   = Ryy,Ryp   Pushover Analysis - Results (EC8)
+
+D0Dcapacity load case ; "PP": performance point<                                          = LCC       Pushover Analysis - Statistics
+D0Econtrol node displacement<                                                             = u-cnod    Pushover Analysis - Statistics
+D0Fbase shear<                                                                            = Vb        Pushover Analysis - Statistics
+D0Gspectral displacement<                                                                 = Sd        Pushover Analysis - Statistics
+D0Hspectral acceleration<                                                                 = Sa        Pushover Analysis - Statistics
+D0Istructural performance limit<                                                          = SPL       Pushover Analysis - Statistics
+
+D11eigenmode number<                                                                      = No        Eigenvalues
+D12eigenvalue<                                                                            = λ         Eigenvalues
+D13relative eigenvalue error<                                                             = errer     Eigenvalues
+D14circular eigenfrequency<                                                               = ω         Eigenvalues
+D15eigenfrequency<                                                                        = f         Eigenvalues
+D16eigenperiod<                                                                           = T         Eigenvalues
+D17modal damping ratio<                                                                   = ξ         Eigenvalues
+D18effective modal mass in X-, Y- and Z-direction<                                        = Meff      Eigenvalues
+D19Total effective mass in X-, Y- and Z-direction.<                                       = Σ(Meff)   Eigenvalues (footnote)
+
+D1Amass proportional damping ratio<
+D1Bstiffness proportional daming ratio<
+D1Coptions for dynamic wind loading<
+
+D1Eeigenvalue (buckling load factor)<                                                     = λ         Buckling Eigenvalues
+D1Flimiting slenderness for buckling length<                                              = λmax      Buckling Eigenvalues
+
+D1Pparticipation factors in X-, Y- and Z-direction<                                       = part      Eigenvalues
+D1QTotal effective mass / participation factors of activated masses in X-, Y- and Z-direction.<  = Σ(part),Σ(Meff) Eigenvaliues (footnote)
+
+D2Cheight at which Vb is calculated<                                                      = H         Sum of forces (Base-Shear)
+D2Dbase shear per mode in X-, Y- and Z-direction<                                         = Vb        Sum of forces (Base-Shear)
+D2Ebase overturning moment per mode about X-, Y- and Z-axis evaluated relative to the origin of the coordinate system<  = Mb        Sum of forces (Base-Shear)
+D2FTotal Vb and Mb obtained by the given modal superposition rule.<                       = SRSS      Sum of forces (Base-Shear) (footnote)
+D2GSuperposed total Vb and Mb obtained by the given response spectra superposition rule.< = SRSS      Sum of forces (Base-Shear) (footnote)
+D2HVb is computed for the entire structure (“base” of the structure).<                    = base      Sum of forces (Base-Shear) (footnote)
+
+D2Iparticipation factor per loading function as scalar product of eigenvector φ and a load shape vector p<   = φT * p0      Modal load paticipation factors per load function
+D2Jscalar product of a vector of squares of eigenvector components φ2 and a load shape vector p<             = φ2 * p0      Modal load paticipation factors per load function
+D2KΣ(φ·p)² - sum of squares of the modal values (φ·p)<                                    = Σ         Modal load paticipation factors per load function (footnote)
+D2LΣ(φ2·p) - sum of modal values (φ2·p)<                                                  = Σ         Modal load paticipation factors per load function (footnote)
+
+D2Mresult type<                                                                           = Type      Maximum Forces and Moments
+D2Nmodal superposition type<                                                              = STYP      Maximum Forces and Moments
+
+D2Otranslational masses in X-, Y- and Z-direction<                                        = TM        Nodal Masses, Masses in nodes, Sum of masses
+D2Protational masses about X-, Y- and Z-axis<                                             = RM        Nodal Masses, Masses in nodes, Sum of masses
+D2Qwarping mass<                                                                          = RMB       Nodal Masses, Masses in nodes, Sum of masses
+D2Rsum of the total and the active nodal masses<                                          = tot,act   Nodal Masses, Masses in nodes, Sum of masses (footnote)
+D2Sfactor on masses<                                                                      = fact      Nodal Masses, Masses in nodes, Sum of masses (footnote)
+D2Tcoordinates of the center of gravity<                                                  = S         Nodal Masses, Masses in nodes, Sum of masses (footnote)
+D2U3x3 rotational mass matrix at the center of gravity<                                   = RM(S)     Nodal Masses, Masses in nodes, Sum of masses (footnote)
+
+D2Vmaximal modal coordinate response per loading function<                                = q,max     Modal Responses
+D2Wmaximal modal coordinate response<                                                     = q(t),max  Modal Responses
+D2Xpseudo-acceleration spectral response normalized w.r.t. ground acceleration<           = S(xi,T)   Modal Responses
+D2Yphase<                                                                                 = ϕ         Modal Responses
+D2Zpeak factor<                                                                           = kp        Modal Responses
+
+DLAload Type (P) = axle/pointload, (B) = distributed load<
+DLBvertical load value<
+DLClongitudinal load value (breaking)<
+DLDtransverse load value<
+DLEeffective load for centrifugal loading<
+DLFfactor for favourable load positions<
+DLGlocation along load train<
+DLHlength of loading<
+DLIexcentricity of loading<
+DLJheight of lateral acting force<
+DLKheight of centrifugal mass center<
+DLLspacing of wheels<
+DLNconnected to node number of vehicle model<
+DLOwidth of wheel contact area<
+DLPlength of wheel contact area<
+
+DM0residual loading<
+DM1velocity of the load train<
+DM2eccentricity of load train<
+DM3factor on single loads<
+DM4factor on uniform loads<
+DM5factor on residual loads<
+DM6factor on longitudinal loads<
+DM7factor on transverse loads<
+DM8factor on centrifugal loads<
+DM9factor on wind loading<
+DMAstart of field<
+DMBend of field<
+DMCtrue length of field<
+DMDaggregated total length<
+DMEaggregated effective length<
+DMFintegral of influence line in field<
+DMGordinate of maximum ordinate in field<
+DMHtype of extremum<
+DMIdynamic impact factor<
+DMKstation value of load reference point<
+DMLtrue ordinate of load reference point<
+DMMexplicit impact factor or effective length<
+DMNdistance of repeated convoy<
+DMOvariable distance in load train<
+DMPspan dependant uniform loading<
+
+   ------------------------------------- MAXIMA
+
+F01action<                                                      = Act
+F02partition of the action<                                     = Part
+F03partial safety factors for unfavourable/favourable/accidental<  = γ-u,γ-f,γ-a
+F04combination coefficients<                                    = ψ-0,ψ-1,ψ-2,ψ-1inf
+F05factor unfavourable/favourable<                              = fak-u,fak-f
+F06factors unfavourable/favourable 1st,2nd,3rd dominant action< = faku1,fakf1,faku2,fakf2,faku3,fakf3
+F07number of the load case<                                     = LC
+F08factor for load case<                                        = Fact
+F09type of the load case<                                       = Type
+F0Asuperposition type<                                          = sup
+F10permanent load grouped in actions<                           = PERM                                Type PERM
+F11permanent load grouped in load cases<                        = PERC                                Type PERC
+F12conditional load<                                            = COND                                Type COND
+F13unsigned conditional load<                                   = UNSI                                Type UNSI
+F14additional contributing load case<                           = F                                   Type F
+F15exclusive load permanent<                                    = AG                                  Type AG no.
+F16exclusive load<                                              = A                                   Type A no.
+F17exclusive load with changing sign<                           = X                                   Type X no.
+
+F21sums of the permanent actions acting unfavourable and favourable, * = decisive<             = SumGU,SumGF
+F22sum of the variable actions for 1st, 2nd, 3rd leading variable action, * = decisive<        = SumQ1,SumQ2,SumQ3
+F23sum of the variable actions for accompanying variable actions, * = decisive<                = SumQI
+F24factors of the permanent load cases acting unfavourable and favourable<          = FacGU,FacGF
+F25factors of the variable load cases for 1st, 2nd, 3rd leading variable action<    = FacQ1,FacQ2,FacQ3
+F26factors of the variable load cases for accompanying variable actions<            = FacQI
+F27resulting factors, - = load case is not considered<                         = Fact
+F28loadcase-wise consideration<             = LCW
+
+  ------------------------------------- CSM
+
+H01number of the construction stage<     = CS                            Construction Stages
+H02type of the action<                   = Type                          Construction Stages
+H03effective duration of creep interval< = t                             Construction Stages
+H05launching distance of this construction stage for launching from side 1<  = launch_1,launch_2    Construction Stages
+H06launching distance of this construction stage for launching from side 2<  = launch_1,launch_2    Construction Stages
+
+H10group number<                      = GRP  / Grp
+H11active from / until construction stage number< = active from, until CS     Group Properties
+H12construction stage number from which the dead load of a group is activated<  = dead load from CS  Group Properties
+H13construction stage number at which hinges are fixed<  = Hfix          Group Properties
+H14construction stage number from which QUAD bedding is activated<  = Bedd from    Group Properties
+H15construction stage number from which the in situ concrete load of a AQUA CS is activated<  = Deck from     Group Properties
+H16stiffness active till construction stage number<  = WSTI              Group Properties
+H17age of concrete at time of loading<  = t0                             Group Properties
+H18start time of drying (from t0-ts shrinkage without effect) < = ts     Group Properties
+H19stiffness factor for first activation (e.g. cable prestress)< = FAK1  Group Properties
+H20factor for creep of springs and beddings<       = PHIF                Group Properties
+H21component of the normal force stiffness of QUAD elements<   = QUEA                   Group Properties
+H22factor of Young's modulus of QUAD elements in local x direction<   = QEMX     Group Properties
+
+H31number of the tendon<               = Number NOT                      Used Tendons
+H32construction stage of the tendon for put in place<  = placing ICS1    Used Tendons
+H33construction stage of the tendon for grouting<      = extrusion ICS2  Used Tendons
+H34construction stage of the tendon for removal<       = removal ICS3    Used Tendons
+H35active from construction stage number<              = active from CS  Used Tendons
+
+H41notional size (2A/U)<               = h-0                             Creep Values / Shrinkage Values
+H42creep factor total<                 = PHI-total                       Scalable creep and shrinkage parameters, additional input
+H43shrinkage coefficient total<        = EPS-total                       Scalable creep and shrinkage parameters, additional input
+H44effective thickness of the QUAD elements<  = d-eff-QUAD               Scalable creep and shrinkage parameters, additional input
+H45construction stage creep part Δϕ-eff<             = Δϕ-eff            Creep Values / Shrinkage Values
+H46construction stage shrinkage part Δε-cs<          = Δε-cs             Creep Values / Shrinkage Values
+H47sum construction stage creep parts<               = ϕ-eff             Creep Values / Shrinkage Values
+H48sum of construction stage parts<                  = ε-cs              Creep Values / Shrinkage Values
+H49effective duration creep interval<                = t                             Creep Values / Shrinkage Values
+H50Creep value for a later (at t0) acting load part (backward creeping)< = RKRI   Kriechbeiwerte / Schwindbeiwerte
+
+999SOFISTIK_LEG

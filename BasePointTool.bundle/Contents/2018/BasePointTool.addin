@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Assembly>BasePointTool.dll</Assembly>
+    <ClientId>339CDB5A-E8C2-6c2f-A9EF-B3222015A3C8</ClientId>
+    <FullClassName>BasePointTool.MainApp</FullClassName>
+    <Name>BasePointTool</Name>
+    <VendorId>ADSK</VendorId>
+    <Author>Corentin Gartner</Author>
+  </AddIn>
+</RevitAddIns>

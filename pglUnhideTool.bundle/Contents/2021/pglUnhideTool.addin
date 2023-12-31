@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Assembly>pglUnhideTool.dll</Assembly>
+    <ClientId>363CDA5A-E6C1-4c2f-A9EF-B3212116B3C4</ClientId>
+    <FullClassName>pglUnhideTool.MainApp</FullClassName>
+    <Name>UnhideElementsTool</Name>
+    <VendorId>PANGOLIN</VendorId>
+    <Author>Corentin Gartner</Author>
+  </AddIn>
+</RevitAddIns>

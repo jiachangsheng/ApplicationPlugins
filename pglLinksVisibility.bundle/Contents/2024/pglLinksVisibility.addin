@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Assembly>pglLinksVisibility.dll</Assembly>
+    <ClientId>351CDA4A-A6C2-4B8A-A9EF-B3222116B3C8</ClientId>
+    <FullClassName>pglLinksVisibility.MainApp</FullClassName>
+    <Name>Links Visibility Manager</Name>
+    <VendorId>ADSK</VendorId>
+    <Author>Corentin Gartner</Author>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="Get Material" Description="Get any face's material information and copy the material's name into clipboard" AppVersion="1.0.1" FriendlyVersion="1.0.1" ProductType="Application" HelpFile="./Contents/help.html" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" OnlineDocumentation="https://www.facebook.com/AoneRevitAddin" Author="Changhan Shen" ProductCode="{171FAE21-BC67-4AA6-B3A9-AB5DA7E39D86}" UpgradeCode="{D38F0679-938D-4360-BBBE-A46375DEA960}" Icon="./Contents/Resources/favicon.ico">
+  <CompanyDetails Name="AONE" Url="https://www.facebook.com/AoneRevitAddin" Email="shchha@hotmail.com" />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2024" />
+  <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />
+    <ComponentEntry AppName="Get Material" Version="1.0.1" ModuleName="./Contents/2019/GetMaterial.addin" AppDescription="Get Material" />
+  </Components>
+  <Components Description="2020 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+    <ComponentEntry AppName="Get Material" Version="1.0.1" ModuleName="./Contents/2020/GetMaterial.addin" AppDescription="Get Material" />
+  </Components>
+  <Components Description="2021 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
+    <ComponentEntry AppName="Get Material" Version="1.0.1" ModuleName="./Contents/2021/GetMaterial.addin" AppDescription="Get Material" />
+  </Components>
+  <Components Description="2022 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
+    <ComponentEntry AppName="Get Material" Version="1.0.1" ModuleName="./Contents/2022/GetMaterial.addin" AppDescription="Get Material" />
+  </Components>
+  <Components Description="2023 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="Get Material" Version="1.0.1" ModuleName="./Contents/2023/GetMaterial.addin" AppDescription="Get Material" />
+  </Components>
+  <Components Description="2024 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2024" SeriesMax="R2024" />
+    <ComponentEntry AppName="Get Material" Version="1.0.1" ModuleName="./Contents/2024/GetMaterial.addin" AppDescription="Get Material" />
+  </Components>
+</ApplicationPackage>

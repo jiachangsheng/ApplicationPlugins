@@ -1,0 +1,122 @@
+001GKS not in proper state: GKS shall be in the state GKCL
+002GKS not in proper state: GKS shall be in the state GKOP
+003GKS not in proper state: GKS shall be in the state WSAC
+004GKS not in proper state: GKS shall be in the state SGOP
+005GKS not in proper state: GKS shall be in the state WSAC or SGOP
+006GKS not in proper state: GKS shall be in the state WSOP or WSAC
+007GKS not in proper state: GKS shall be in the state WSOP,WSAC or SGOP
+008GKS not in proper state: GKS shall be in the state GKOP,WSOP,WSAC or SGOP
+020Specified workstation indentifier is invalid
+021Specified connection identifier is invalid
+022Specified workstation type is invalid
+023Specified workstation type does not exist
+024Specified workstation is open
+025Specified workstation is not open
+026Specified workstation cannot be opened
+027Workstation Independent Segment Storage is not open
+028Workstation Independent Segment Storage is already open
+029Specified workstation is active
+030Specified workstation is not active
+031Specified workstation is of category MO
+032Specified workstation is not of category MO
+033Specified workstation is of category MI
+034Specified workstation is not category MI
+035Specified workstation is of category INPUT
+036Specified workstation is Workstation Independent Segment Storage
+037Specified workstation is not of category OUTIN
+038Specified workstation is neither of category INPUT nor of category OUTIN
+039Specified workstation is neither of catgory OUTPUT nor of category OUTIN
+040Specified workstation has no pixel store readback capability
+041Specified workstation has not the specified generalized drawing primitive
+050Transformation number is invalid
+051Rectangle definition is invalid
+052Viewport is not within the Normalized Device Coordinate unit square
+053Workstation window is not within the Normalized Device Coordinate unit square
+054Workstation viewport is not within the display space
+060Polyline index is invalid
+061The specified polyline index has not been defined on this workstation
+062Linetype is less than or equal to zero
+063Specified linetype is not supported on this workstation
+064Polymarker index is invalid
+065The specified polymarker index has not been defined on this workstation
+066Marker type is less than or equal to zero
+067Specified marker type is not supported on this workstation
+068Text index is invalid
+069The specified text index has not been defined on this workstation
+070Text font is less than or equal to zero
+071Text font is not supported for the required precision on this workstation
+072Character expansion factor is less than or equal to zero
+073Character height is less than or equal to zero
+074Length of character up vector is zero
+075Fill area index is invalid
+076The specified fill area index has not been defined on this workstation
+077Specified fill area interior style is not supported on this workstation
+078Style (pattern or hatch) index is less than or equal to zero
+079Specified pattern index is invalid
+080Specified hatch style is not supported on this workstation
+081Pattern size value is not positive
+082The specified pattern index has not been defined on this workstation
+083Interior style PATTERN is not supported on this workstation
+084Dimensions of colour array are invalid
+085Colour index is less than zero
+086Colour index is invalid
+087A representation for the specified colour index has not been defined
+088Colour is outside range (0,1)
+089Pick indentifier is invalid
+100Number of points is invalid
+101Invalid code in string
+102Generalized drawing primitive identifier  is invalid
+103Content of generalized drawing primitive data record is invalid
+104One active workstation has not the specified generalized drawing primitive
+120Specified segment name is invalid
+121Specified segment name is already in use
+122Specified segment does not exist
+123Specified segment does not exist on specified workstation
+124Specified segment does not exist on Workstation Independent Segment Storage
+125Specified segment is open
+126Segment priority is outside the range (0,1)
+140Specified input device is not present on workstation
+141Input device is not in REQUEST mode
+142Input device is not in SAMPLE  mode
+143EVENT/SAMPLE input mode is not available at this level of GKS
+144Specified prompt and echo type is not supported on this workstation
+145Echo area is outside display space
+146Contents of input data record are invalid
+147Input qucue has overflowed
+148Input queue has not overflowed since GKS was opened or last INQUIRE OVERFLOW
+149Input queue has overflowed, but associated workstation has been closed
+150No input value of the correct class is in the current event report
+151Timeout is invalid
+152Initial value is invalid
+153Length of initial string is greater than the implementation defined maximum
+160Item type is not allowed for user items
+161Item length is invalid
+162No record is left in GKS metafile input
+163Metafile item is invalid
+164Item type is not a valid GKS item
+165Content of item data record is invalid for the specified item type
+166Maximum item data record length is invalid
+167User item cannot be interpreted
+160Item type is not allowed for user items
+161Item length is invalid
+162No record is left in GKS metafile input
+163Metafile item is invalid
+164Item type is not a valid GKS item
+165Content of item data record is invalid for the specified item type
+166Maximum item data record length is invalid
+167User item cannot be interpreted
+180Specified function is not supported
+181Contents of escape data record is invalid
+300Specified function is not supported in this level of GKS
+301Storage overflow has occurred in GKS
+302Storage overflow has occurred in segment storage
+303Input Output error has occurred while reading
+304Input Output error has occurred while writing
+305Input Output error has occurred while sending data to a workstation
+306Input Output error has occurred while receiving data from a workstation
+307Input Output error has occurred during programm library management
+308Input Output error has occurred while reading workstation description table
+309Arithmetic error has occurred
+998not yet implemented:
+999Implementation error:
+

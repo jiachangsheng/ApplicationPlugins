@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="ElementSelector Pro2" Description="Filter, Preview, and Select elements from an active view, a level, current selection, or entire ..." AppVersion="1.0.3" FriendlyVersion="1.0.3" ProductType="Application" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="Min Naung" HelpFile="./Contents/help.html" OnlineDocumentation="https://twentytwo.space" ProductCode="{89B668A2-CB3F-4198-9300-A29689D4F0CB}" UpgradeCode="{74FB2ACC-8D52-4F99-B84B-50B5BE0573D4}" Icon="./Contents/Resources/favicon.ico">
+  <CompanyDetails Name="TwentyTwo" Email="https://twentytwo.space/contact/" Url="https://twentytwo.space" />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2024" />
+  <Components Description="2022 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
+    <ComponentEntry AppName="ElementSelector Pro2" Version="1.0.3" ModuleName="./Contents/ElementSelectorPro.addin" AppDescription="ElementSelector Pro2" />
+  </Components>
+  <Components Description="2023 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="ElementSelector Pro2" Version="1.0.3" ModuleName="./Contents/ElementSelectorPro.addin" AppDescription="ElementSelector Pro2" />
+  </Components>
+  <Components Description="2024 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2024" SeriesMax="R2024" />
+    <ComponentEntry AppName="ElementSelector Pro2" Version="1.0.3" ModuleName="./Contents/ElementSelectorPro.addin" AppDescription="ElementSelector Pro2" />
+  </Components>
+</ApplicationPackage>

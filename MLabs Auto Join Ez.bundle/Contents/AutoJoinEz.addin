@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>AutoJoinEz</Name>
+    <Assembly>AutoJoinEz.dll</Assembly>
+    <AddInId>B0EC44E9-B107-479D-9CA7-5C5AB754AE43</AddInId>
+    <FullClassName>MLApps.RibbonApp</FullClassName>
+    <VendorId>MLabs</VendorId>
+    <VendorDescription>MLabs SOLUTIONS - manh.envi@gmail.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

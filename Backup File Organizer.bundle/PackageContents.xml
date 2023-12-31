@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="Backup File Organizer" Description="Keeps your project directories clean by automatically moving Revit backup files into a separate folder." AppVersion="2023.0.0.0" FriendlyVersion="2020.0.0.0" ProductType="Application" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="Joseph Sferrazza" HelpFile="./Contents/Backup File Organizer.html" OnlineDocumentation="http://www.appsbyjs.com/" ProductCode="{59C3E7C2-A09A-41EA-8D57-FED85D9F2741}" UpgradeCode="{9AA06CD0-4CF6-4A9F-A071-9CB69FDFC25F}" Icon="./Contents/Resources/appicon.ico">
+  <CompanyDetails Name="Joe Sferrazza" Email="support@appsbyjs.com" Url="http://www.appsbyjs.com/" Phone=" " />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2017" SeriesMax="R2020" />
+  <Components Description="2017">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2017" SeriesMax="R2017" />
+    <ComponentEntry AppName="Backup File Organizer" Version="2020.0.0.0" ModuleName="./Contents/2017/BackupOrganizer.addin" AppDescription="Backup File Organizer" />
+  </Components>
+  <Components Description="2018">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="Backup File Organizer" Version="2020.0.0.0" ModuleName="./Contents/2018/BackupOrganizer.addin" AppDescription="Backup File Organizer" />
+  </Components>
+  <Components Description="2019">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />
+    <ComponentEntry AppName="Backup File Organizer" Version="2020.0.0.0" ModuleName="./Contents/2019/BackupOrganizer.addin" AppDescription="Backup File Organizer" />
+  </Components>
+  <Components Description="2020">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+    <ComponentEntry AppName="Backup File Organizer" Version="2020.0.0.0" ModuleName="./Contents/2020/BackupOrganizer.addin" AppDescription="Backup File Organizer" />
+  </Components>
+  <Components Description="2023">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" />
+    <ComponentEntry AppName="Backup File Organizer" Version="2020.0.0.0" ModuleName="./Contents/2020/BackupOrganizer.addin" AppDescription="Backup File Organizer" />
+  </Components>
+</ApplicationPackage>

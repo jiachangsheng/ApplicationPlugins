@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Microdesk Accelerator</Name>
+    <Assembly>Microdesk.RevitToolkit.dll</Assembly>
+    <AddInId>746ab493-cb01-4c29-9747-fd681307008d</AddInId>
+    <FullClassName>Microdesk.Ribbon.ReflectionRibbonBuilder</FullClassName>
+    <VendorId>MDSK</VendorId>
+    <VendorDescription>Microdesk</VendorDescription>
+  </AddIn>
+</RevitAddIns>

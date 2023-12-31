@@ -1,0 +1,41 @@
+QWidget#CollapsiblePanelWidget {
+  border: 1px solid gray;
+}
+QWidget#CollapsiblePanelWidget_TitleBar {
+  min-height: 14px;
+
+  /* BEGIN: This is a verbatim copy of #section_title in sidebar.group.style (SOFiPLUS repository). */
+	color: black;
+	font-weight: bold;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2: 1, stop: 0 #aaa, stop: 1 #999);
+	border: 1px solid #888;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+  /* END */
+}
+
+/* center all widgets in the title bar by setting a margin ... */
+QWidget#CollapsiblePanelWidget_TitleBar QWidget {
+  margin: 2 2 3 0;
+  color: white; /* also, text is white by default */
+}
+
+/* TODO: move out into a separate style ... */
+QPushButton#ClickableButton {
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+QPushButton#ClickableButton:hover {
+  border: none;
+  color: #ccc;
+}
+QPushButton#ClickableButton:pressed {
+  color: #dda;
+}
+QPushButton#ClickableButton:checked {
+  color: #fe9;
+}

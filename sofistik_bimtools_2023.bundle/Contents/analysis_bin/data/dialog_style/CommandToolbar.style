@@ -1,0 +1,24 @@
+#toolbar {
+}
+
+QPushButton {
+  margin-bottom: 2px;
+  min-height: 16px;
+  min-width: 16px;
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 2px;
+  border-color: gray;
+  background-color: #0d5ca6;
+}
+
+QPushButton:hover {
+  background-color: #ffb;
+}
+
+QPushButton:pressed {
+  background-color: #dda;
+}
+QPushButton:checked {
+  background-color: #dda;
+}

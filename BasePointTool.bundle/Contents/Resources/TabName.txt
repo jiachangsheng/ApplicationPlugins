@@ -1,0 +1,4 @@
+Pangolin
+
+// Write on the first line the name of the tab in which you want to insert the add-in panel
+// Write <default> (without brackets) to insert the add-in panel in the Add-Ins tab

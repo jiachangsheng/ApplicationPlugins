@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="Auto Join Ez" Description="The Auto Join Ez is a simple Join/Unjoin plugin. This app can help to join geometry between Walls, Floors, Columns, etc" AppVersion="1.1.0" FriendlyVersion="1.1.0" ProductType="Application" HelpFile="./Contents/help.html" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="Manh Nguyen Duc" ProductCode="{9E0E5DD1-92BB-4159-BEA5-A4480109DF75}" UpgradeCode="{1FD83F82-ABF2-461B-93F5-67BC70B0EDFD}" Icon="./Contents/Resources/App icon.ico" OnlineDocumentation="https://www.mlaunity.com/">
+  <CompanyDetails Name="MLabs" Url="https://www.mlaunity.com/" Email="manh.envi@gmail.com" Phone=" " />
+  <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2024" />
+  <Components Description="Parts 2020">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+    <ComponentEntry AppName="Auto Join Ez" Version="1.1.0" ModuleName="./Contents/AutoJoinEz.addin" AppDescription="The Auto Join Ez is a simple Join/Unjoin plugin. This app can help to join geometry between Walls, Floors, Columns, etc" />
+  </Components>
+  <Components Description="Parts 2021">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
+    <ComponentEntry AppName="Auto Join Ez" Version="1.1.0" ModuleName="./Contents/AutoJoinEz.addin" AppDescription="The Auto Join Ez is a simple Join/Unjoin plugin. This app can help to join geometry between Walls, Floors, Columns, etc" />
+  </Components>
+  <Components Description="Parts 2022">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
+    <ComponentEntry AppName="Auto Join Ez" Version="1.1.0" ModuleName="./Contents/AutoJoinEz.addin" AppDescription="The Auto Join Ez is a simple Join/Unjoin plugin. This app can help to join geometry between Walls, Floors, Columns, etc" />
+  </Components>
+  <Components Description="Parts 2023">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
+    <ComponentEntry AppName="Auto Join Ez" Version="1.1.0" ModuleName="./Contents/AutoJoinEz.addin" AppDescription="The Auto Join Ez is a simple Join/Unjoin plugin. This app can help to join geometry between Walls, Floors, Columns, etc" />
+  </Components>
+  <Components Description="Parts 2024">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2024" SeriesMax="R2024" />
+    <ComponentEntry AppName="Auto Join Ez" Version="1.1.0" ModuleName="./Contents/AutoJoinEz.addin" AppDescription="The Auto Join Ez is a simple Join/Unjoin plugin. This app can help to join geometry between Walls, Floors, Columns, etc" />
+  </Components>
+</ApplicationPackage>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>ElementSelectorPro</Name>
+    <Assembly>ElementSelectorPro.dll</Assembly>
+    <AddInId>EB1D4FA8-F6A1-4329-8FE7-ADBE0C983C83</AddInId>
+    <FullClassName>ElementSelectorPro.MainClass</FullClassName>
+    <VendorId>TwentyTwo</VendorId>
+    <VendorDescription>twentytwo, https://twentytwo.space </VendorDescription>
+  </AddIn>
+</RevitAddIns>
